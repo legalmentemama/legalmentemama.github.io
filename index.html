@@ -1,61 +1,68 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>CodePen - psyCalc</title>
-  <link href="https://fonts.googleapis.com/css?family=Quattrocento:400,700" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="./style.css">
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Calculadora de Pensión</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
 </head>
-<body>
-<!-- partial:index.partial.html -->
-<div class="panel">
 
-  <div style="display:flex;align-items:center;justify-content:space-around">
-    <div class="title">
-      Calculadora de pensión - Legalmente Mamá ♥
+<body style="background: url(&quot;assets/img/bg.jpg&quot;) bottom / auto;display: flex;transform: scale(1.10);">
+    <div class="container-fluid justify-content-xl-center align-items-xl-start">
+        <div class="row pulse animated">
+            <div class="col-auto mx-auto" style="margin-top: 81px;border-radius: 15px;border-top-left-radius: 5;border-top-right-radius: 5;border-bottom-right-radius: 5;border-bottom-left-radius: 5;border-style: initial;background: rgba(255,255,255,0.93);box-shadow: 7px 7px rgb(255,108,2);">
+                <div class="table-responsive" style="margin-top: 0px;padding-top: 0px;">
+                    <table class="table">
+                        <thead>
+                            <tr style="margin-bottom: 0px;padding-bottom: 0px;text-align: left;height: 100px;">
+                                <th style="font-family: Recoleta;font-size: 33px;text-align: left;transform: perspective(0px) translate(0px) translateX(10px) rotate(-1deg);text-shadow: 2px 2px rgb(255,255,255), -2px -2px rgb(255,255,255);color: rgb(227,54,96);border-style: none;padding-bottom: 18px;">Calculadora de pensión</th>
+                                <th style="border-style: none;"><img src="assets/img/logosmall.png" style="max-width: 121px;"></th>
+                            </tr>
+                        </thead>
+                        <tbody style="margin-right: 0px;padding-right: 0px;">
+                            <tr>
+                                <td style="margin-right: 0px;padding-right: 0px;border-style: none;text-align: right;">Cell 1</td>
+                                <td style="border-style: none;">Cell 2</td>
+                            </tr>
+                            <tr>
+                                <td style="margin-right: 0px;padding-right: 0px;border-style: none;text-align: right;">Cell 1</td>
+                                <td style="border-style: none;">Cell 2</td>
+                            </tr>
+                            <tr>
+                                <td style="margin-right: 0px;padding-right: 0px;border-style: none;text-align: right;">Cell 1</td>
+                                <td style="border-style: none;">Cell 2</td>
+                            </tr>
+                            <tr>
+                                <td style="margin-right: 0px;padding-right: 0px;border-style: none;text-align: right;">Cell 1</td>
+                                <td style="border-style: none;">Cell 2</td>
+                            </tr>
+                            <tr>
+                                <td style="margin-right: 0px;padding-right: 0px;border-style: none;">Cell 1</td>
+                                <td style="border-style: none;">Cell 2</td>
+                            </tr>
+                            <tr>
+                                <td style="margin-right: 0px;padding-right: 0px;border-style: none;">Cell 1</td>
+                                <td style="border-style: none;">Cell 2</td>
+                            </tr>
+                            <tr>
+                                <td style="margin-right: 0px;padding-right: 0px;border-style: none;">Cell 1</td>
+                                <td style="border-style: none;">Cell 2</td>
+                            </tr>
+                            <tr>
+                                <td style="margin-right: 0px;padding-right: 0px;border-style: none;">Cell 1</td>
+                                <td style="border-style: none;">Cell 2</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="units-switch">
-      <div id="lyserg" class="units-btn active"> Legalmente </div>
-      <div id="mushy" class="units-btn"> Mamá </div>
-      <div class="sub-text"> ♥♥♥ </div>
-    </div>
-  </div>
-  <br>
-
-  <div class="calculator">
-    <form name="dosage_form" id="dosage_form" oninput="calculate()">
-      Prueba :
-      <input id="dose" type="number" min="0" step="5" name="dose"> <span class="units">μg</span>
-      <br><br>
-      Prueba:
-      <input id="days" type="number" min="1" max="14" value="1" name="days">
-    </form>
-
-    <div class="result">
-      Lorem nanai sit amet
-      <div id="value"> <output id="result"></output> <span class="units">μg</span> </div>
-      consectetur adipiscing elit.
-    </div>
-  </div>
-
-  <br>
-
-  <div class="notes">
-    Somos
-    <br><br> Legalmente
-    <br><br> Mamá
-    <br><br> &#x2764;
-  </div>
-</div>
-
-<div class="footer">
-  Made thanks to: &nbsp
-  <a href="https://psychedeliccalc.herokuapp.com" target="_blank"> awesome javascript </a>&nbsp | &nbsp
-  <a href="https://www.reddit.com/r/LSD/comments/3w9ms0/psychedelic_tolerance_calculator_and_formula/" target="_blank"> amazing idea </a>
-</div>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="./script.js"></script>
-
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
 </body>
+
 </html>
