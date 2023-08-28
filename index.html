@@ -27,9 +27,9 @@
                             </tr>
                             <tr style="display: flex;border-style: hidden;padding-top: 8px;padding-bottom: 3px;">
                                 <td style="display: flex;border-style: hidden;">
-                                    <div><a class="btn btn-primary" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapse-1" href="#collapse-1" role="button" style="background: var(--bs-border-color);padding: 0;padding-right: 0;border-style: none;box-shadow: 2px 2px 5px rgba(0,0,0,0.15);">&nbsp; ¿Cómo funciona?&nbsp;&nbsp;<img src="assets/img/qmark.png" width="30" height="30" style="filter: brightness(200%) contrast(198%);transform: translateX(-3px) scale(0.80);"><br></a>
-                                        <div class="collapse" id="collapse-1" style="padding-right: 19px;">
-                                            <p class="d-flex me-auto" style="line-height: 21px;color: rgb(75,86,96);background: #fffff3;text-align: justify;">Toca cada una de las secciones a continuación (Vivienda, Alimentación, Educación, Salud, Recreación, Higiene y Labores de cuidado) para expandirlas y rellena cada item con su monto correspondiente.</p>
+                                    <div><a class="btn btn-primary" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapse-1" href="#collapse-1" role="button" style="background: var(--bs-border-color);padding: 0;padding-right: 0;border-style: none;box-shadow: 2px 2px 5px rgba(0,0,0,0.15);">&nbsp; ¿Cómo funciona?&nbsp;&nbsp;<img src="assets/img/qmark.png" width="30" height="30" style="filter: brightness(200%) contrast(198%);transform: translateX(-3px) scale(0.80);"><br></a>
+                                        <div class="collapse show" id="collapse-1" style="padding-right: 19px;">
+                                            <p class="d-flex me-auto" style="line-height: 21px;color: rgb(75,86,96);background: #fffff3;text-align: justify;">Toca cada una de las secciones a continuación (Vivienda, Alimentación, Educación, Salud, Recreación, Higiene y Labores de cuidado) para expandirlas y rellena cada item con su monto mensual correspondiente.</p>
                                         </div>
                                     </div>
                                 </td>
@@ -42,12 +42,12 @@
                                             <div class="accordion-collapse collapse show item-1" role="tabpanel">
                                                 <div class="accordion-body">
                                                     <div class="row">
-                                                        <div class="col-12 col-sm-9 col-md-9 col-lg-12 col-xl-12" style="padding-left: 4px;"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cómo te llamas?</label></div>
+                                                        <div class="col-12 col-sm-9 col-md-9 col-lg-12 col-xl-12" style="padding-left: 4px;"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cómo se llama tu hija o hijo?</label></div>
                                                     </div>
                                                     <div class="row">
                                                         <div class="col-12 col-md-2 col-lg-1 col-xl-1 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,248);min-height: 37px;padding-right: 3px;padding-left: 3px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-triangle-fill d-inline-flex align-self-center" style="transform: rotate(90deg);padding-left: 0px;margin-left: 4px;border-style: none;color: rgb(251,244,247);">
                                                                 <path fill-rule="evenodd" d="M7.022 1.566a1.13 1.13 0 0 1 1.96 0l6.857 11.667c.457.778-.092 1.767-.98 1.767H1.144c-.889 0-1.437-.99-.98-1.767L7.022 1.566z"></path>
-                                                            </svg><input class="flex-grow-1 align-self-center" type="text" max="20" min="2" name="nombre" step="1" style="text-align: left;min-width: 57px;border-style: hidden;height: 33px;padding-left: 7px;margin-left: 7px;" placeholder="Ingresa tu nombre"></div>
+                                                            </svg><input class="flex-grow-1 align-self-center" type="text" max="20" min="2" name="nombre" step="1" style="text-align: left;min-width: 57px;border-style: hidden;height: 33px;padding-left: 7px;margin-left: 7px;" placeholder="Ingresa el nombre de tu hija o hijo"></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -57,12 +57,23 @@
                                             <div class="accordion-collapse collapse show item-2" role="tabpanel">
                                                 <div class="accordion-body">
                                                     <div class="row">
-                                                        <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">Número de personas que viven en tu casa, incluidos tú y tus hijos:</label></div>
-                                                        <div class="col-12 col-md-2 col-lg-1 col-xl-2 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,248);min-height: 37px;"><input class="flex-grow-1 align-self-center" type="number" id="personas" max="20" min="2" name="personas" step="1" style="text-align: left;min-width: 57px;border-style: hidden;" placeholder="Ingresa un número"></div>
+                                                        <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuántas personas viven en tu casa, incluidos tú y tus hijos?</label></div>
+                                                        <div class="col-12 col-md-2 col-lg-1 col-xl-2 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,248);min-height: 37px;"><input class="flex-grow-1 align-self-center" type="number" id="personas" max="20" min="2" name="personas" step="1" style="text-align: left;min-width: 57px;border-style: hidden;" placeholder="Ingresa un número" onchange="validate(&quot;personas&quot;);"></div>
+                                                    </div>
+                                                    <div class="row" id="errorpersonas" style="display: none;">
+                                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="padding-left: 0px;padding-right: 0px;"><label class="col-form-label d-flex justify-content-end mx-auto" style="letter-spacing: -0.5px;background: rgba(215,48,34,0.07);color: rgb(210,13,1);padding-left: 11px;padding-right: 7px;text-align: right;">El mínimo de personas es 2 y el máximo es 20.</label></div>
                                                     </div>
                                                     <div class="row" style="margin-top: 5px;">
-                                                        <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">Campo dos:</label></div>
-                                                        <div class="col-12 col-md-2 col-lg-1 col-xl-2 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,248);min-height: 37px;"><input class="flex-grow-1 align-self-center" type="number" id="campodos" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;" placeholder="Ingresa un número"></div>
+                                                        <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto gastas en arriendo o dividendo al mes?</label></div>
+                                                        <div class="col-12 col-md-2 col-lg-1 col-xl-2 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,248);min-height: 37px;padding-left: 2px;">
+                                                            <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="arriendo" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 11px;" placeholder="Ingresa un número">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row" style="margin-top: 5px;">
+                                                        <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuál es el valor promedio de tu boleta de luz al mes?</label></div>
+                                                        <div class="col-12 col-md-2 col-lg-1 col-xl-2 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,248);min-height: 37px;padding-left: 2px;">
+                                                            <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="luz" max="999999" min="0" name="campodos" step="1" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 11px;" placeholder="Ingresa un número">
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -73,7 +84,7 @@
                                                 <div class="accordion-body">
                                                     <div class="row">
                                                         <div class="col-12 col-sm-9 col-md-9 col-lg-10 col-xl-10"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">Número de personas que viven en tu casa, incluidos tú y tus hijos:</label></div>
-                                                        <div class="col-12 col-md-2 col-lg-1 col-xl-1 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,248);min-height: 37px;"><input class="flex-grow-1 align-self-center" type="number" id="resultado" max="20" min="2" name="resultado" step="1" style="text-align: left;min-width: 57px;border-style: hidden;" readonly=""></div>
+                                                        <div class="col-12 col-md-2 col-lg-1 col-xl-1 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,248);min-height: 37px;"><input type="text" id="resultado" max="" min="" name="resultado" step="" style="text-align: left;min-width: 57px;border-style: hidden;" readonly=""></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -87,7 +98,7 @@
                                                         <div class="col-12 col-md-2 col-lg-1 col-xl-1 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,248);min-height: 37px;"><input class="flex-grow-1 align-self-center" type="number" max="20" min="2" value="2" step="1" style="text-align: left;min-width: 57px;border-style: hidden;"></div>
                                                     </div>
                                                     <div class="row">
-                                                        <div class="col-12 col-md-2 col-lg-4 col-xl-1 offset-lg-7 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,248);min-height: 37px;"><button class="btn btn-primary .units-btn" id="boton" type="button" onclick="calculate();">Button</button></div>
+                                                        <div class="col-12 col-md-2 col-lg-4 col-xl-1 offset-lg-7 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,248);min-height: 37px;"><button class="btn btn-primary" id="boton" type="button" onclick="calculate();">Button</button></div>
                                                     </div>
                                                 </div>
                                             </div>
