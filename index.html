@@ -1,29 +1,44 @@
 <!DOCTYPE html>
-<html lang="en" style="background: url(&quot;assets/img/bg2.png&quot;);background-size: auto;border-style: hidden;border-color: rgba(0,0,0,0);">
+<html lang="en" style="background: url(&quot;assets/img/bg2.png&quot;);border-style: hidden;border-color: rgba(0,0,0,0);position: static;overflow: auto;background-size: auto;">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Calculadora de Pensión</title>
+    <title>Calculadora de pensión</title>
+    <meta property="og:type" content="website">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
 </head>
 
 <body class="d-flex align-content-center" style="background: transparent;border-style: hidden;border-color: rgba(33,37,41,0);height: auto;width: auto;">
-    <div class="container-fluid d-lg-flex d-xl-flex justify-content-lg-center justify-content-xl-center" style="border-style: none;position: relative;margin: auto;padding: 0px;">
-        <div class="row d-inline-block pulse animated" style="border-style: none;max-width: 819px;">
-            <div class="col-auto mx-auto" id="formulario" style="margin-top: 81px;border-top-left-radius: 5;border-top-right-radius: 5;border-bottom-right-radius: 5;border-bottom-left-radius: 5;background: rgba(255,255,255,0.93);box-shadow: 0px -19px rgb(228,158,175), 0px 33px rgb(127,106,143), 0px 46px rgba(33,37,41,0.31), 0px -39px rgb(241,135,160);border-style: none;border-color: rgb(127,106,143);margin-left: 10px;padding-left: 8px;padding-right: 3px;">
+    <div class="container-fluid" style="border-style: none;position: relative;margin: auto;padding: 0px;">
+        <div class="row order-first" id="navbar" style="background: #ffffff;margin: 0px;">
+            <div class="col">
+                <nav class="navbar navbar-light navbar-expand fixed-top" style="background: #ffffff;height: 39px;padding-top: 3px;padding-bottom: 9px;box-shadow: 0px 4px rgba(0,0,0,0.1);">
+                    <div class="container"><a class="navbar-brand d-flex align-items-center align-self-center m-auto align-items-lg-center" href="http://legalmentemama.github.io" style="padding-bottom: 0px;font-size: 14px;letter-spacing: -1px;line-height: 9.5px;color: rgba(85,85,85,0.9);padding-top: 8px;margin-right: 0px;padding-right: 15px;"><img class="d-flex d-lg-flex align-items-center m-auto" src="assets/img/logosolo.png" style="height: auto;object-fit: contain;max-height: 37px;opacity: 0.71;margin-top: 10px;padding-bottom: 1px;margin-bottom: 0px;padding-top: 0px;">&nbsp;legalmente<br>&nbsp;mamá&nbsp; &nbsp; &nbsp;♥</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                        <div class="collapse navbar-collapse" id="navcol-1">
+                            <ul class="navbar-nav d-flex">
+                                <li class="nav-item d-flex"><a class="nav-link d-flex justify-content-center align-items-center" href="https://api.whatsapp.com/send/?phone=56953560843" style="padding-bottom: 2px;font-size: 9px;margin-right: 0px;padding-right: 0px;color: rgba(0,0,0,0.7);" target="_blank"><img class="d-flex align-items-center" src="assets/img/wsplogo.png" style="width: auto;max-height: 32px;opacity: 1;filter: grayscale(45%);margin-right: -3px;">+56953560843</a></li>
+                                <li class="nav-item"><a class="nav-link active d-flex justify-content-start align-items-center" style="padding-bottom: 2px;font-size: 9px;padding-left: 8px;color: rgba(0,0,0,0.8);" target="_blank" href="https://www.instagram.com/legalmentemama.cl/"><img class="d-flex align-items-center" src="assets/img/iglogo.png" style="width: auto;max-height: 32px;opacity: 0.51;padding: 3px;padding-right: 0px;margin-right: -1px;">&nbsp;@legalmentemama.cl</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row d-inline-block d-lg-flex d-xl-flex justify-content-center mx-auto pulse animated" style="border-style: none;max-width: 819px;">
+            <div class="col-auto mx-auto" id="formulario" style="margin-top: 81px;border-top-left-radius: 5;border-top-right-radius: 5;border-bottom-right-radius: 5;border-bottom-left-radius: 5;background: rgba(255,255,255,0.93);box-shadow: 0px -19px rgb(228,158,175), 0px 33px rgb(127,106,143), 0px 46px rgba(33,37,41,0.31), 0px -39px rgb(241,135,160);border-style: none;border-color: rgb(127,106,143);padding-left: 8px;padding-right: 3px;">
                 <div class="table-responsive d-table align-items-center">
                     <table class="table table-sm">
-                        <thead>
-                            <tr style="margin-bottom: 0px;padding-bottom: 0px;height: 150px;">
-                                <td class="text-start d-flex align-items-center align-self-end flex-wrap" style="font-family: Railey-PersonalUse;font-size: 54px;transform: perspective(0px) translateY(-5px) rotate(-2deg);text-shadow: 2px 2px rgb(231,171,171);color: #b8175d;border-style: none;line-height: 40.5px;padding-bottom: 0px;letter-spacing: 0px;text-align: center;margin-bottom: -1px;"><br>
+                        <thead style="padding-bottom: 0px;margin-bottom: 0px;">
+                            <tr style="height: 150px;margin-bottom: 0px;padding-bottom: 0px;">
+                                <td class="text-start d-flex align-items-center align-self-end flex-wrap" style="font-family: Railey-PersonalUse;font-size: 54px;transform: perspective(0px) translateY(-5px) rotate(-2deg);text-shadow: 2px 2px rgb(231,171,171);color: #b8175d;border-style: none;line-height: 40.5px;padding-bottom: 0px;letter-spacing: 0px;text-align: center;margin-bottom: -19px;"><br>
                                     <div class="row d-flex" style="max-height: 201px;margin-bottom: 5%;padding-bottom: 0px;">
-                                        <div class="col-6 col-sm-6 col-md-7 col-xl-7 offset-1 offset-sm-1 offset-md-1 offset-xl-1 d-inline-flex order-first me-auto">
+                                        <div class="col-5 col-sm-7 col-md-8 col-xl-8 offset-1 offset-sm-1 offset-md-1 offset-xl-1 d-flex order-first me-auto" style="padding-left: 2px;">
                                             <p class="d-flex align-self-center" style="transform: translateX(-20px);font-size: 92px;text-align: right;font-family: Railey-PersonalUse;padding-top: 0px;margin-top: 16px;">¡Hola!<br><br></p>
                                         </div>
-                                        <div class="col-4 col-sm-3 col-md-2 col-xl-1 offset-sm-2 offset-md-0 offset-xl-4 d-flex flex-shrink-1 align-items-center flex-sm-grow-1" style="padding-left: 0px;margin-left: 1px;"><img class="img-fluid d-flex" src="assets/img/logosmall.png" style="width: auto;height: auto;margin-top: -14px;transform: translateX(-5%);"></div>
+                                        <div class="col-5 col-sm-1 col-md-2 col-xl-1 offset-sm-5 offset-md-0 offset-xl-4 d-flex flex-shrink-1 align-items-center flex-sm-grow-1" style="padding-left: 0px;margin-left: 1px;"><img class="img-fluid d-flex" src="assets/img/logosmall.png" style="width: auto;height: auto;margin-top: -14px;transform: translateX(-5%);"></div>
                                     </div>
                                 </td>
                             </tr>
@@ -36,7 +51,7 @@
                                 <td style="display: flex;border-style: hidden;">
                                     <div><a class="btn btn-primary comofunc" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapse-1" href="#collapse-1" role="button" style="background: var(--bs-border-color);padding: 0;padding-right: 0;border-style: none;box-shadow: 2px 2px 5px rgba(0,0,0,0.15);">&nbsp; ¿Cómo funciona?&nbsp;&nbsp;<img src="assets/img/qmark.png" width="30" height="30" style="filter: brightness(200%) contrast(198%);transform: translateX(-3px) scale(0.80);"><br></a>
                                         <div class="collapse" id="collapse-1" style="padding-right: 19px;">
-                                            <p class="d-flex me-auto" style="line-height: 21px;color: rgb(75,86,96);background: #fffff3;text-align: justify;">Toca cada una de las secciones a continuación (Vivienda, Alimentación, Educación, Salud, Recreación, Higiene y Labores de cuidado) para expandirlas y rellena cada item con su monto mensual correspondiente.</p>
+                                            <p class="d-flex me-auto" style="line-height: 21px;color: rgb(75,86,96);background: #fffff3;text-align: justify;">Toca cada una de las secciones a continuación (Vivienda, Alimentación, Educación, Salud, Recreación, Higiene y Labores de cuidado) para expandirlas y rellena cada item con su monto mensual correspondiente. Podrás imprimir el resultado de la planilla de gastos o contactarnos por WhatsApp para continuar tus trámites de pensión.</p>
                                         </div>
                                     </div>
                                 </td>
@@ -44,9 +59,9 @@
                             <tr id="acordion">
                                 <td style="padding-right: 7px;margin-left: 0px;padding-left: 0px;border-style: hidden;">
                                     <div class="accordion" role="tablist" id="accordion-1">
-                                        <div class="accordion-item" id="cat-sobreti" title="test" style="border-left-style: hidden;">
-                                            <h2 class="accordion-header" role="tab" style="border-left-style: hidden;"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-1" aria-expanded="true" aria-controls="accordion-1 .item-1" style="font-family: Recoleta;font-size: 20px;font-weight: bold;color: rgb(255,255,255);background: rgb(246,198,210);box-shadow: 0px 0px, inset -61px 0px rgb(253,176,181), inset 0px 28px rgb(253,210,220);text-shadow: 2px 2px 6px rgb(216,85,77);"><strong>💁‍♀️&nbsp; SOBRE&nbsp; TI</strong></button></h2>
-                                            <div class="accordion-collapse collapse show item-1" role="tabpanel">
+                                        <div class="accordion-item" id="cat-sobreti" title="" style="border-left-style: hidden;">
+                                            <h2 class="accordion-header" role="tab" style="border-left-style: hidden;"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-1" aria-expanded="true" aria-controls="accordion-1 .item-1" id="sobretibutton" style="font-family: Recoleta;font-size: 20px;font-weight: bold;color: rgb(255,255,255);background: rgb(246,198,210);box-shadow: 0px 0px, inset -61px 0px rgb(253,176,181), inset 0px 28px rgb(253,210,220);text-shadow: 2px 2px 6px rgb(216,85,77);"><strong>💁‍♀️&nbsp; SOBRE&nbsp; TU HIJO O HIJA</strong></button></h2>
+                                            <div class="accordion-collapse collapse show item-1" role="tabpanel" id="sobretibuttoncontent">
                                                 <div class="accordion-body">
                                                     <div class="row">
                                                         <div class="col-12 col-sm-9 col-md-9 col-lg-12 col-xl-12" style="padding-left: 4px;"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cómo se llama tu hijo o hija por quien vas a solicitar la pensión?&nbsp;</label></div>
@@ -54,18 +69,21 @@
                                                     <div class="row">
                                                         <div class="col-12 col-md-2 col-lg-1 col-xl-1 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,248);min-height: 37px;padding-right: 3px;padding-left: 3px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-triangle-fill d-inline-flex align-self-center" style="transform: rotate(90deg);padding-left: 0px;margin-left: 4px;border-style: none;color: rgb(251,244,247);">
                                                                 <path fill-rule="evenodd" d="M7.022 1.566a1.13 1.13 0 0 1 1.96 0l6.857 11.667c.457.778-.092 1.767-.98 1.767H1.144c-.889 0-1.437-.99-.98-1.767L7.022 1.566z"></path>
-                                                            </svg><input class="flex-grow-1 align-self-center" type="text" max="20" min="2" name="nombre" step="1" style="text-align: left;min-width: 57px;border-style: hidden;height: 33px;padding-left: 7px;margin-left: 7px;" placeholder="Ingresa el nombre de tu hija o hijo"></div>
+                                                            </svg><input class="flex-grow-1 align-self-center" type="text" id="nombre" max="20" min="2" name="nombre" step="1" style="text-align: left;min-width: 57px;border-style: hidden;height: 33px;padding-left: 7px;margin-left: 7px;" placeholder="Ingresa el nombre de tu hija o hijo" minlength="1" maxlength="80" required=""></div>
+                                                    </div>
+                                                    <div class="row" style="text-align: left;">
+                                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" id="errornombre" style="padding-left: 0px;padding-right: 0px;text-align: left;display: none;"><label class="col-form-label text-start d-flex flex-grow-1" style="letter-spacing: -0.5px;background: rgba(215,48,34,0.07);color: rgb(210,13,1);padding-left: 11px;padding-right: 7px;text-align: left;">Por favor ingresa el nombre de tu hijo o hija.</label></div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="accordion-item" id="cat-vivienda" title="test">
-                                            <h2 class="accordion-header" role="tab"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-2" aria-expanded="true" aria-controls="accordion-1 .item-2" style="font-family: Recoleta;font-size: 20px;font-weight: bold;color: rgb(255,255,255);background: rgb(246,198,210);box-shadow: 0px 0px, inset -61px 0px rgb(253,176,181), inset 0px 28px rgb(253,210,220);text-shadow: 2px 2px 6px rgb(216,85,77);"><br><strong>🏡 VIVIENDA</strong></button></h2>
-                                            <div class="accordion-collapse collapse show item-2" role="tabpanel">
+                                        <div class="accordion-item" id="cat-vivienda">
+                                            <h2 class="accordion-header" role="tab"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-2" aria-expanded="true" aria-controls="accordion-1 .item-2" id="viviendabutton" style="font-family: Recoleta;font-size: 20px;font-weight: bold;color: rgb(255,255,255);background: rgb(246,198,210);box-shadow: 0px 0px, inset -61px 0px rgb(253,176,181), inset 0px 28px rgb(253,210,220);text-shadow: 2px 2px 6px rgb(216,85,77);"><br><strong>🏡 VIVIENDA</strong></button></h2>
+                                            <div class="accordion-collapse collapse show item-2" role="tabpanel" id="viviendabuttoncontent">
                                                 <div class="accordion-body">
                                                     <div class="row" id="inputpersonas">
                                                         <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuántas personas viven en tu casa, incluidos tú y tus hijos?</label></div>
-                                                        <div class="col-12 col-md-2 col-lg-1 col-xl-2 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,248);min-height: 37px;"><input class="flex-grow-1 align-self-center" type="number" id="personas" max="20" min="2" name="personas" step="1" style="text-align: left;min-width: 57px;border-style: hidden;" placeholder="Ingresa un número" onchange="validate(&quot;personas&quot;);"></div>
+                                                        <div class="col-12 col-md-2 col-lg-1 col-xl-2 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,248);min-height: 37px;"><input class="flex-grow-1 align-self-center" type="number" id="personas" max="20" min="2" name="personas" step="1" style="text-align: left;min-width: 57px;border-style: hidden;" placeholder="Ingresa un número"></div>
                                                     </div>
                                                     <div class="row" id="errorpersonas" style="display: none;">
                                                         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="padding-left: 0px;padding-right: 0px;"><label class="col-form-label d-flex justify-content-end mx-auto" style="letter-spacing: -0.5px;background: rgba(215,48,34,0.07);color: rgb(210,13,1);padding-left: 11px;padding-right: 7px;text-align: justify;">El mínimo de personas es 2 (tú y tu hijo o hija)</label></div>
@@ -73,7 +91,7 @@
                                                     <div class="row" id="inputarriendo" style="margin-top: 8px;">
                                                         <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto gastas en arriendo o dividendo al mes?</label></div>
                                                         <div class="col-12 col-md-2 col-lg-1 col-xl-2 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,228);min-height: 37px;padding-left: 2px;">
-                                                            <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="arriendo" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto" onchange="validate(&quot;arriendo&quot;);">
+                                                            <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="arriendo" max="999999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto">
                                                         </div>
                                                     </div>
                                                     <div class="row" id="errorarriendo" style="display: none;">
@@ -82,7 +100,7 @@
                                                     <div class="row" id="inputluz" style="margin-top: 8px;">
                                                         <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto pagas en luz al mes, en promedio?</label></div>
                                                         <div class="col-12 col-md-2 col-lg-1 col-xl-2 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,248);min-height: 37px;padding-left: 2px;">
-                                                            <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="luz" max="999999" min="0" name="campodos" step="100" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto" onchange="validate(&quot;luz&quot;);">
+                                                            <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="luz" max="999999" min="0" name="campodos" step="100" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto">
                                                         </div>
                                                     </div>
                                                     <div class="row" id="errorluz" style="display: none;">
@@ -91,7 +109,7 @@
                                                     <div class="row" id="inputagua" style="margin-top: 8px;">
                                                         <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto pagas en agua al mes, en promedio?</label></div>
                                                         <div class="col-12 col-md-2 col-lg-1 col-xl-2 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,228);min-height: 37px;padding-left: 2px;">
-                                                            <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="agua" max="999999" min="0" name="campodos" step="100" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto" onchange="validate(&quot;agua&quot;);">
+                                                            <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="agua" max="999999" min="0" name="campodos" step="100" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto">
                                                         </div>
                                                     </div>
                                                     <div class="row" id="erroragua" style="display: none;">
@@ -100,7 +118,7 @@
                                                     <div class="row" id="inputinternet" style="margin-top: 8px;">
                                                         <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto pagas en telefonía e Internet al mes?</label></div>
                                                         <div class="col-12 col-md-2 col-lg-1 col-xl-2 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,248);min-height: 37px;padding-left: 2px;">
-                                                            <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="internet" max="999999" min="0" name="campodos" step="100" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto" onchange="validate(&quot;internet&quot;);">
+                                                            <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="internet" max="999999" min="0" name="campodos" step="100" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto">
                                                         </div>
                                                     </div>
                                                     <div class="row" id="errorinternet" style="display: none;">
@@ -109,7 +127,7 @@
                                                     <div class="row" id="inputcalefa" style="margin-top: 8px;">
                                                         <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto pagas en calefacción al mes? Esto incluye gas, parafina y otros.</label></div>
                                                         <div class="col-12 col-md-2 col-lg-1 col-xl-2 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,228);min-height: 37px;padding-left: 2px;">
-                                                            <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="calefa" max="999999" min="0" name="campodos" step="100" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto" onchange="validate(&quot;calefa&quot;);">
+                                                            <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="calefa" max="999999" min="0" name="campodos" step="100" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto">
                                                         </div>
                                                     </div>
                                                     <div class="row" id="errorcalefa" style="display: none;">
@@ -118,23 +136,23 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="accordion-item" id="cat-alimentacion" title="test">
-                                            <h2 class="accordion-header" role="tab"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-3" aria-expanded="true" aria-controls="accordion-1 .item-3" style="font-family: Recoleta;font-size: 20px;font-weight: bold;color: rgb(255,255,255);background: rgb(246,198,210);box-shadow: 0px 0px, inset -61px 0px rgb(253,176,181), inset 0px 28px rgb(253,210,220);text-shadow: 2px 2px 6px rgb(216,85,77);"><br><strong>🍎 ALIMENTACIÓN</strong></button></h2>
-                                            <div class="accordion-collapse collapse show item-3" role="tabpanel">
+                                        <div class="accordion-item" id="cat-alimentacion">
+                                            <h2 class="accordion-header" role="tab"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-3" aria-expanded="true" aria-controls="accordion-1 .item-3" id="alimentacionbutton" style="font-family: Recoleta;font-size: 20px;font-weight: bold;color: rgb(255,255,255);background: rgb(246,198,210);box-shadow: 0px 0px, inset -61px 0px rgb(253,176,181), inset 0px 28px rgb(253,210,220);text-shadow: 2px 2px 6px rgb(216,85,77);"><br><strong>🍎 ALIMENTACIÓN</strong></button></h2>
+                                            <div class="accordion-collapse collapse show item-3" role="tabpanel" id="alimentacionbuttoncontent">
                                                 <div class="accordion-body">
-                                                    <div class="row" id="inputsuper" style="margin-top: 8px;">
+                                                    <div class="row" id="inputsuperm" style="margin-top: 8px;">
                                                         <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto gastas en el supermercado al mes?</label></div>
                                                         <div class="col-12 col-md-2 col-lg-1 col-xl-2 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,248);min-height: 37px;padding-left: 2px;">
-                                                            <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="super" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto" onchange="validate(&quot;super&quot;);">
+                                                            <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="superm" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto">
                                                         </div>
                                                     </div>
-                                                    <div class="row" id="errorsuper" style="display: none;">
+                                                    <div class="row" id="errorsuperm" style="display: none;">
                                                         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="padding-left: 0px;padding-right: 0px;"><label class="col-form-label d-flex justify-content-end mx-auto" style="letter-spacing: -0.5px;background: rgba(215,48,34,0.07);color: rgb(210,13,1);padding-left: 11px;padding-right: 7px;text-align: justify;">Debes ingresar un monto. Si no tienes gastos de compras en supermercados, puedes ingresar $0.</label></div>
                                                     </div>
                                                     <div class="row" id="inputferia" style="margin-top: 8px;">
                                                         <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto gastas en la feria al mes, en promedio?</label></div>
                                                         <div class="col-12 col-md-2 col-lg-1 col-xl-2 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,228);min-height: 37px;padding-left: 2px;">
-                                                            <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="feria" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto" onchange="validate(&quot;feria&quot;);">
+                                                            <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="feria" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto">
                                                         </div>
                                                     </div>
                                                     <div class="row" id="errorferia" style="display: none;">
@@ -143,7 +161,7 @@
                                                     <div class="row" id="inputalmacen" style="margin-top: 8px;">
                                                         <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto gastas en almacenes o negocios de barrio al mes?</label></div>
                                                         <div class="col-12 col-md-2 col-lg-1 col-xl-2 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,248);min-height: 37px;padding-left: 2px;">
-                                                            <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="almacen" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto" onchange="validate(&quot;almacen&quot;);">
+                                                            <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="almacen" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto">
                                                         </div>
                                                     </div>
                                                     <div class="row" id="erroralmacen" style="display: none;">
@@ -152,14 +170,14 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="accordion-item" id="cat-educacion" title="test">
-                                            <h2 class="accordion-header" role="tab"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-4" aria-expanded="true" aria-controls="accordion-1 .item-4" style="font-family: Recoleta;font-size: 20px;font-weight: bold;color: rgb(255,255,255);background: rgb(246,198,210);box-shadow: 0px 0px, inset -61px 0px rgb(253,176,181), inset 0px 28px rgb(253,210,220);text-shadow: 2px 2px 6px rgb(216,85,77);"><br><strong>🎓 EDUCACIÓN</strong></button></h2>
-                                            <div class="accordion-collapse collapse show item-4" role="tabpanel">
+                                        <div class="accordion-item" id="cat-educacion">
+                                            <h2 class="accordion-header" role="tab"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-4" aria-expanded="true" aria-controls="accordion-1 .item-4" id="educacionbutton" style="font-family: Recoleta;font-size: 20px;font-weight: bold;color: rgb(255,255,255);background: rgb(246,198,210);box-shadow: 0px 0px, inset -61px 0px rgb(253,176,181), inset 0px 28px rgb(253,210,220);text-shadow: 2px 2px 6px rgb(216,85,77);"><br><strong>🎓 EDUCACIÓN</strong></button></h2>
+                                            <div class="accordion-collapse collapse show item-4" role="tabpanel" id="educacionbuttoncontent">
                                                 <div class="accordion-body">
                                                     <div class="row" id="inputarancel" style="margin-top: 8px;">
                                                         <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto gastas en la mensualidad escolar o universitaria de tu hijo o hija?&nbsp;</label></div>
                                                         <div class="col-12 col-md-2 col-lg-1 col-xl-2 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,228);min-height: 37px;padding-left: 2px;">
-                                                            <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="arancel" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto" onchange="validate(&quot;arancel&quot;);">
+                                                            <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="arancel" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto">
                                                         </div>
                                                     </div>
                                                     <div class="row" id="errorarancel" style="display: none;">
@@ -168,7 +186,7 @@
                                                     <div class="row" id="inputtransporte" style="margin-top: 8px;">
                                                         <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto gastas en el transporte para tu hija o hijo? (micro, furgón, bencina, etc.)&nbsp;</label></div>
                                                         <div class="col-12 col-md-2 col-lg-1 col-xl-2 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,248);min-height: 37px;padding-left: 2px;">
-                                                            <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="transporte" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto" onchange="validate(&quot;transporte&quot;);">
+                                                            <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="transporte" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto">
                                                         </div>
                                                     </div>
                                                     <div class="row" id="errortransporte" style="display: none;">
@@ -177,7 +195,7 @@
                                                     <div class="row" id="inpututiles" style="margin-top: 8px;">
                                                         <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto gastas en los útiles escolares de tu hijo o hija al mes?</label></div>
                                                         <div class="col-12 col-md-2 col-lg-1 col-xl-2 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,228);min-height: 37px;padding-left: 2px;">
-                                                            <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="utiles" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto" onchange="validate(&quot;utiles&quot;);">
+                                                            <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="utiles" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto">
                                                         </div>
                                                     </div>
                                                     <div class="row" id="errorutiles" style="display: none;">
@@ -186,23 +204,23 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="accordion-item" id="cat-salud" title="test">
-                                            <h2 class="accordion-header" role="tab"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-5" aria-expanded="true" aria-controls="accordion-1 .item-5" style="font-family: Recoleta;font-size: 20px;font-weight: bold;color: rgb(255,255,255);background: rgb(246,198,210);box-shadow: 0px 0px, inset -61px 0px rgb(253,176,181), inset 0px 28px rgb(253,210,220);text-shadow: 2px 2px 6px rgb(216,85,77);"><br><strong>🩺 SALUD</strong></button></h2>
-                                            <div class="accordion-collapse collapse show item-5" role="tabpanel">
+                                        <div class="accordion-item" id="cat-salud">
+                                            <h2 class="accordion-header" role="tab"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-5" aria-expanded="true" aria-controls="accordion-1 .item-5" id="saludbutton" style="font-family: Recoleta;font-size: 20px;font-weight: bold;color: rgb(255,255,255);background: rgb(246,198,210);box-shadow: 0px 0px, inset -61px 0px rgb(253,176,181), inset 0px 28px rgb(253,210,220);text-shadow: 2px 2px 6px rgb(216,85,77);"><br><strong>🩺 SALUD</strong></button></h2>
+                                            <div class="accordion-collapse collapse show item-5" role="tabpanel" id="saludbuttoncontent">
                                                 <div class="accordion-body">
                                                     <div class="row" id="inputconsultas" style="margin-top: 8px;">
                                                         <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto gastas en consultas médicas para tu hijo o hija al mes?</label></div>
                                                         <div class="col-12 col-md-2 col-lg-1 col-xl-2 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,248);min-height: 37px;padding-left: 2px;">
-                                                            <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="consultas" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto" onchange="validate(&quot;consultas&quot;);">
+                                                            <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="consultas" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto">
                                                         </div>
                                                     </div>
                                                     <div class="row" id="errorconsultas" style="display: none;">
                                                         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="padding-left: 0px;padding-right: 0px;"><label class="col-form-label d-flex justify-content-end mx-auto" style="letter-spacing: -0.5px;background: rgba(215,48,34,0.07);color: rgb(210,13,1);padding-left: 11px;padding-right: 7px;text-align: justify;">Debes ingresar un monto. Si no gastas en consultas médicas, puedes ingresar $0.</label></div>
                                                     </div>
                                                     <div class="row" id="inputmedicamentos" style="margin-top: 8px;">
-                                                        <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto gastas en medicamentos para tu hijo o hija al mes?</label></div>
+                                                        <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto gastas en medicamentos y fórmula (relleno) para tu hijo o hija al mes?</label></div>
                                                         <div class="col-12 col-md-2 col-lg-1 col-xl-2 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,228);min-height: 37px;padding-left: 2px;">
-                                                            <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="medicamentos" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto" onchange="validate(&quot;medicamentos&quot;);">
+                                                            <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="medicamentos" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto">
                                                         </div>
                                                     </div>
                                                     <div class="row" id="errormedicamentos" style="display: none;">
@@ -211,14 +229,39 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="accordion-item" id="cat-recreacion" title="test">
-                                            <h2 class="accordion-header" role="tab"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-6" aria-expanded="true" aria-controls="accordion-1 .item-6" style="font-family: Recoleta;font-size: 20px;font-weight: bold;color: rgb(255,255,255);background: rgb(246,198,210);box-shadow: 0px 0px, inset -61px 0px rgb(253,176,181), inset 0px 28px rgb(253,210,220);text-shadow: 2px 2px 6px rgb(216,85,77);"><br><strong>⚽ RECREACIÓN&nbsp;</strong></button></h2>
-                                            <div class="accordion-collapse collapse show item-6" role="tabpanel">
+                                        <div class="accordion-item" id="cat-vestuario" title="">
+                                            <h2 class="accordion-header" role="tab"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-6" aria-expanded="true" aria-controls="accordion-1 .item-6" id="vestuariobutton" style="font-family: Recoleta;font-size: 20px;font-weight: bold;color: rgb(255,255,255);background: rgb(246,198,210);box-shadow: 0px 0px, inset -61px 0px rgb(253,176,181), inset 0px 28px rgb(253,210,220);text-shadow: 2px 2px 6px rgb(216,85,77);"><br><strong>👕 VESTUARIO</strong></button></h2>
+                                            <div class="accordion-collapse collapse show item-6" role="tabpanel" id="vestuariobuttoncontent">
+                                                <div class="accordion-body">
+                                                    <div class="row" id="inputropa" style="margin-top: 8px;">
+                                                        <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto gastas en ropa para tu hija o hijo al mes? (Incluido el uniforme escolar)</label></div>
+                                                        <div class="col-12 col-md-2 col-lg-1 col-xl-2 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,248);min-height: 37px;padding-left: 2px;">
+                                                            <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="ropa" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row" id="errorropa" style="display: none;">
+                                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="padding-left: 0px;padding-right: 0px;"><label class="col-form-label d-flex justify-content-end mx-auto" style="letter-spacing: -0.5px;background: rgba(215,48,34,0.07);color: rgb(210,13,1);padding-left: 11px;padding-right: 7px;text-align: justify;">Debes ingresar un monto. Si no gastas en ropa para tu hijo o hija, puedes ingresar $0.</label></div>
+                                                    </div>
+                                                    <div class="row" id="inputcalzado" style="margin-top: 8px;">
+                                                        <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto gastas en calzado para tu hijo o hija al mes? (Incluido calzado escolar)</label></div>
+                                                        <div class="col-12 col-md-2 col-lg-1 col-xl-2 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,228);min-height: 37px;padding-left: 2px;">
+                                                            <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="calzado" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row" id="errorcalzado" style="display: none;">
+                                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="padding-left: 0px;padding-right: 0px;"><label class="col-form-label d-flex justify-content-end mx-auto" style="letter-spacing: -0.5px;background: rgba(215,48,34,0.07);color: rgb(210,13,1);padding-left: 11px;padding-right: 7px;text-align: justify;">Debes ingresar un monto. Si no gastas en calzado para tu hijo o hija, puedes ingresar $0.</label></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item" id="cat-recreacion">
+                                            <h2 class="accordion-header" role="tab"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-7" aria-expanded="true" aria-controls="accordion-1 .item-7" id="recreacionbutton" style="font-family: Recoleta;font-size: 20px;font-weight: bold;color: rgb(255,255,255);background: rgb(246,198,210);box-shadow: 0px 0px, inset -61px 0px rgb(253,176,181), inset 0px 28px rgb(253,210,220);text-shadow: 2px 2px 6px rgb(216,85,77);"><br><strong>⚽ RECREACIÓN&nbsp;</strong></button></h2>
+                                            <div class="accordion-collapse collapse show item-7" role="tabpanel" id="recreacionbuttoncontent">
                                                 <div class="accordion-body">
                                                     <div class="row" id="inputesparcimiento" style="margin-top: 8px;">
                                                         <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto gastas en actividades recreativas para tu hijo o hija al mes? Esto incluye paseos, mantención de mascotas, vacaciones, etc.</label></div>
                                                         <div class="col-12 col-md-2 col-lg-1 col-xl-2 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,248);min-height: 37px;padding-left: 2px;">
-                                                            <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="esparcimiento" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto" onchange="validate(&quot;esparcimiento&quot;);">
+                                                            <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="esparcimiento" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto">
                                                         </div>
                                                     </div>
                                                     <div class="row" id="erroresparcimiento" style="display: none;">
@@ -227,7 +270,7 @@
                                                     <div class="row" id="inputtalleres" style="margin-top: 8px;">
                                                         <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto gastas en talleres o cursos para tu hijo o hija al mes?</label></div>
                                                         <div class="col-12 col-md-2 col-lg-1 col-xl-2 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,228);min-height: 37px;padding-left: 2px;">
-                                                            <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="talleres" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto" onchange="validate(&quot;talleres&quot;);">
+                                                            <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="talleres" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto">
                                                         </div>
                                                     </div>
                                                     <div class="row" id="errortalleres" style="display: none;">
@@ -236,14 +279,14 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="accordion-item" id="cat-higiene" title="test">
-                                            <h2 class="accordion-header" role="tab"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-7" aria-expanded="true" aria-controls="accordion-1 .item-7" style="font-family: Recoleta;font-size: 20px;font-weight: bold;color: rgb(255,255,255);background: rgb(246,198,210);box-shadow: 0px 0px, inset -61px 0px rgb(253,176,181), inset 0px 28px rgb(253,210,220);text-shadow: 2px 2px 6px rgb(216,85,77);"><br><strong>🫧 HIGIENE</strong></button></h2>
-                                            <div class="accordion-collapse collapse show item-7" role="tabpanel">
+                                        <div class="accordion-item" id="cat-higiene">
+                                            <h2 class="accordion-header" role="tab"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-8" aria-expanded="true" aria-controls="accordion-1 .item-8" id="higienebutton" style="font-family: Recoleta;font-size: 20px;font-weight: bold;color: rgb(255,255,255);background: rgb(246,198,210);box-shadow: 0px 0px, inset -61px 0px rgb(253,176,181), inset 0px 28px rgb(253,210,220);text-shadow: 2px 2px 6px rgb(216,85,77);"><br><strong>🫧 HIGIENE</strong></button></h2>
+                                            <div class="accordion-collapse collapse show item-8" role="tabpanel" id="higienebuttoncontent">
                                                 <div class="accordion-body">
                                                     <div class="row" id="inputaseo" style="margin-top: 8px;">
                                                         <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto gastas en objetos de aseo personal para tu hijo o hija al mes?</label></div>
                                                         <div class="col-12 col-md-2 col-lg-1 col-xl-2 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,248);min-height: 37px;padding-left: 2px;">
-                                                            <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="aseo" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto" onchange="validate(&quot;aseo&quot;);">
+                                                            <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="aseo" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto">
                                                         </div>
                                                     </div>
                                                     <div class="row" id="erroraseo" style="display: none;">
@@ -252,7 +295,7 @@
                                                     <div class="row" id="inputdiapers" style="margin-top: 8px;">
                                                         <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto gastas en pañales para tu hija o hijo al mes?</label></div>
                                                         <div class="col-12 col-md-2 col-lg-1 col-xl-2 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,228);min-height: 37px;padding-left: 2px;">
-                                                            <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="diapers" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto" onchange="validate(&quot;diapers&quot;);">
+                                                            <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="diapers" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto">
                                                         </div>
                                                     </div>
                                                     <div class="row" id="errordiapers" style="display: none;">
@@ -261,14 +304,14 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="accordion-item" id="cat-labores" title="test">
-                                            <h2 class="accordion-header" role="tab"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-8" aria-expanded="true" aria-controls="accordion-1 .item-8" style="font-family: Recoleta;font-size: 20px;font-weight: bold;color: rgb(255,255,255);background: rgb(246,198,210);box-shadow: 0px 0px, inset -61px 0px rgb(253,176,181), inset 0px 28px rgb(253,210,220);text-shadow: 2px 2px 6px rgb(216,85,77);"><br><strong>🤍</strong>LABORES DE CUIDADO&nbsp;</button></h2>
-                                            <div class="accordion-collapse collapse show item-8" role="tabpanel">
+                                        <div class="accordion-item" id="cat-labores">
+                                            <h2 class="accordion-header" role="tab"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-9" aria-expanded="true" aria-controls="accordion-1 .item-9" id="laboresbutton" style="font-family: Recoleta;font-size: 20px;font-weight: bold;color: rgb(255,255,255);background: rgb(246,198,210);box-shadow: 0px 0px, inset -61px 0px rgb(253,176,181), inset 0px 28px rgb(253,210,220);text-shadow: 2px 2px 6px rgb(216,85,77);"><br><strong>🤍</strong>LABORES DE CUIDADO&nbsp;</button></h2>
+                                            <div class="accordion-collapse collapse show item-9" role="tabpanel" id="laboresbuttoncontent">
                                                 <div class="accordion-body">
                                                     <div class="row" id="inputsalacuna" style="margin-top: 8px;">
                                                         <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto pagas al mes por la salacuna para tu hija o hijo?</label></div>
                                                         <div class="col-12 col-md-2 col-lg-1 col-xl-2 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,248);min-height: 37px;padding-left: 2px;">
-                                                            <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="salacuna" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto" onchange="validate(&quot;salacuna&quot;);">
+                                                            <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="salacuna" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto">
                                                         </div>
                                                     </div>
                                                     <div class="row" id="errorsalacuna" style="display: none;">
@@ -277,7 +320,7 @@
                                                     <div class="row" id="inputninera" style="margin-top: 8px;">
                                                         <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto le pagas a una niñera/o para que vean a tu hijo/a cada mes?</label></div>
                                                         <div class="col-12 col-md-2 col-lg-1 col-xl-2 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,228);min-height: 37px;padding-left: 2px;">
-                                                            <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="ninera" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto" onchange="validate(&quot;ninera&quot;);">
+                                                            <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="ninera" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto">
                                                         </div>
                                                     </div>
                                                     <div class="row" id="errorninera" style="display: none;">
@@ -286,7 +329,7 @@
                                                     <div class="row" id="inputmadre" style="margin-top: 8px;">
                                                         <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">Si tuvieras que ponerle un valor al cuidado que TÚ proporcionas a tu hijo o hija (como si fuera un monto mensual que le pagas a un cuidador), ¿cuánto vale ese cuidado que proporcionas?&nbsp;</label></div>
                                                         <div class="col-12 col-md-2 col-lg-1 col-xl-2 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,248);min-height: 37px;padding-left: 2px;">
-                                                            <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="madre" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto" onchange="validate(&quot;madre&quot;);">
+                                                            <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="madre" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto">
                                                         </div>
                                                     </div>
                                                     <div class="row" id="errormadre" style="display: none;">
@@ -299,7 +342,7 @@
                                 </td>
                             </tr>
                             <tr style="border-style: hidden;">
-                                <td style="padding-left: 16px;font-size: 17px;font-family: Recoleta;padding-top: 20px;color: rgb(1,167,157);font-weight: bold;text-align: justify;text-shadow: 1px 1px 7px rgba(125,255,239,0.44);line-height: 24px;border-style: hidden;letter-spacing: 1px;padding-right: 28px;">Para finalizar, presiona el botón CALCULAR.<br>Obtendrás el desglose de los gastos mensuales de tu hijo o hija para presentarlos en una mediación por pensión alimenticia.</td>
+                                <td style="padding-left: 16px;font-size: 17px;font-family: Recoleta;padding-top: 20px;color: rgb(1,117,167);font-weight: bold;text-align: justify;line-height: 20px;border-style: hidden;letter-spacing: 0px;padding-right: 28px;">Para finalizar, presiona el botón CALCULAR.</td>
                             </tr>
                             <tr id="errorcalculo" style="display: none;">
                                 <td style="padding-top: 24px;"><label class="form-label d-flex justify-content-start mx-auto" style="letter-spacing: -0.5px;background: rgba(215,48,34,0.07);color: rgb(210,13,1);padding-left: 11px;padding-right: 7px;padding-bottom: 13px;padding-top: 11px;">· Algunos de los campos que ingresaste no son válidos o están vacíos.<br>· Por favor revisa los campos marcados en rojo y rellena los campos vacíos.</label></td>
@@ -307,7 +350,7 @@
                             <tr style="border-style: hidden;">
                                 <td style="padding-left: 16px;font-size: 19px;font-family: Recoleta;padding-top: 20px;color: rgb(197,35,84);font-weight: bold;text-align: right;text-shadow: 2px 2px 3px rgba(173,29,55,0.23);padding-right: 24px;line-height: 26px;border-style: hidden;">
                                     <div class="row">
-                                        <div class="col-8 col-sm-9 col-xl-5 offset-xl-0 d-flex justify-content-start"><button class="btn btn-primary calcbtn" id="calcular" type="button" style="min-width: 168px;min-height: 60px;font-size: 30px;background: #afffad;box-shadow: inset 0px -23px rgb(46,218,177), 2px 2px rgba(0,0,0,0.09);border-radius: 5px;color: rgb(255,255,255);text-shadow: 2px 3px 0px rgb(11,198,153);font-weight: bold;letter-spacing: 0px;padding-right: 8px;padding-left: 8px;padding-top: 3px;padding-bottom: 5px;border: 3px groove rgb(32,181,173);" onclick="CalculoFinal();">Calcular</button></div>
+                                        <div class="col-8 col-sm-9 col-xl-5 offset-xl-0 d-flex justify-content-start"><button class="btn btn-primary calcbtn" id="calcular" type="button" style="min-width: 168px;min-height: 60px;font-size: 30px;background: #c4105e;box-shadow: inset 0px -5px rgb(145,16,72), 1px 1px 5px 2px rgba(0,0,0,0.19);color: rgb(255,255,255);text-shadow: 3px 3px 0px rgb(135,15,67);font-weight: bold;letter-spacing: 0px;padding-right: 8px;padding-left: 8px;padding-top: 3px;padding-bottom: 5px;border-radius: 0px;border-style: hidden;" onclick="CalculoFinal();">Calcular</button></div>
                                         <div class="col-4 col-sm-3 offset-sm-0 offset-xl-4 d-flex flex-grow-0 align-self-baseline mt-auto align-items-md-end" style="padding-right: 15px;padding-left: 19px;"><button class="btn btn-primary" type="button" style="max-height: 63px;padding-left: 4px;padding-right: 4px;font-size: 14px;line-height: 15px;background: rgb(225,225,225);color: rgb(255,255,255);border-style: hidden;text-shadow: -1px 0px 5px rgb(89,89,89);box-shadow: 1px 1px 5px 1px rgb(180,180,180);display: none;">Borrar formulario</button></div>
                                     </div>
                                 </td>
@@ -316,30 +359,97 @@
                     </table>
                 </div>
             </div>
-            <div class="col-auto mx-auto" id="resultados" style="margin-top: 81px;border-top-left-radius: 5;border-top-right-radius: 5;border-bottom-right-radius: 5;border-bottom-left-radius: 5;background: rgba(255,255,255,0.93);box-shadow: 0px -19px rgb(228,158,175), 0px 33px rgb(127,106,143), 0px 46px rgba(33,37,41,0.31), 0px -39px rgb(241,135,160);border-style: none;border-color: rgb(127,106,143);margin-left: 10px;padding-left: 8px;padding-right: 3px;display: none;">
+            <div class="col-auto mx-auto" id="resultados" style="border-top-left-radius: 5;border-top-right-radius: 5;border-bottom-right-radius: 5;border-bottom-left-radius: 5;background: rgba(255,255,255,0.93);box-shadow: 0px -19px rgb(228,158,175), 0px 33px rgb(127,106,143), 0px 46px rgba(33,37,41,0.31), 0px -39px rgb(241,135,160);border-style: none;border-color: rgb(127,106,143);padding-left: 0px;padding-right: 1px;margin-top: 82px;">
                 <div class="table-responsive d-table align-items-center">
                     <table class="table table-sm">
                         <thead>
-                            <tr style="margin-bottom: 0px;padding-bottom: 0px;height: 150px;">
-                                <td class="text-start d-flex align-items-center align-self-end flex-wrap" style="font-family: Railey-PersonalUse;font-size: 54px;transform: perspective(0px) translateY(-5px) rotate(-2deg);text-shadow: 2px 2px rgb(231,171,171);color: #b8175d;border-style: none;line-height: 40.5px;padding-bottom: 0px;letter-spacing: 0px;text-align: center;margin-bottom: -1px;"><br>
-                                    <div class="row d-flex justify-content-evenly mx-auto" style="max-height: 201px;margin-bottom: 5%;padding-bottom: 0px;">
-                                        <div class="col-6 col-sm-6 col-md-8 col-xl-7 offset-0 offset-sm-1 offset-md-1 offset-xl-1 d-inline-flex order-first me-auto" style="padding-left: 21px;">
-                                            <p class="d-flex align-self-center" style="transform: translateX(-20px);text-align: right;font-family: Railey-PersonalUse;padding-top: 0px;margin-top: 16px;font-size: 61px;">¡Resultados!<br><br></p>
-                                        </div>
-                                        <div class="col-4 col-sm-3 col-md-1 col-xl-1 offset-0 offset-sm-2 offset-md-0 offset-xl-4 d-flex flex-shrink-1 align-items-center flex-sm-grow-1" style="padding-left: 0px;margin-left: 1px;"><img class="img-fluid d-flex" src="assets/img/logosmall.png" style="width: auto;height: auto;margin-top: -14px;transform: translateX(-5%);"></div>
+                            <tr>
+                                <td class="text-start d-flex justify-content-md-start" id="cellmama" style="font-family: Railey-PersonalUse;font-size: 54px;transform: perspective(0px) translateY(-5px) rotate(-2deg);text-shadow: 2px 2px rgb(231,171,171);color: #b8175d;border-style: none;line-height: 40.5px;letter-spacing: 0px;text-align: center;margin-top: 18px;"><br>
+                                    <div class="row g-0 d-flex justify-content-between align-items-start m-auto align-items-md-start" id="rowentera" style="max-height: 119px;">
+                                        <div class="col-5 col-sm-3 col-md-3 col-lg-3 col-xl-3 d-flex justify-content-md-start align-items-md-start justify-content-lg-start" style="padding-left: 0px;margin-left: 21px;"><img class="img-fluid d-flex align-items-md-start justify-content-lg-start" id="isotipo" src="assets/img/isotipo.png" width="313" height="225"></div>
+                                        <div class="col-3 col-sm-2 col-md-2 col-lg-2 col-xl-2 offset-1 offset-sm-2 offset-md-0 offset-lg-4 offset-xl-4 d-flex justify-content-lg-end" style="margin-left: 1px;padding-left: 0px;"><img class="img-fluid d-flex" id="logosolo" src="assets/img/logosolo.png" style="width: auto;transform: translateX(-5%);margin-top: 4px;padding-bottom: 0px;margin-bottom: -2px;" width="auto" height="auto"></div>
                                     </div>
                                 </td>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr style="padding-bottom: 0px;height: 63px;">
-                                <td style="font-family: Recoleta;font-size: 20px;text-align: justify;color: rgb(184,23,93);letter-spacing: -0.5px;font-weight: bold;line-height: 20px;border-style: hidden;border-color: rgb(127,106,143);text-shadow: 2px 2px 3px rgba(173,29,55,0.23);padding-right: 35px;margin-top: 0px;padding-top: 0px;padding-left: 40px;">Planilla de gastos mensuales de</td>
+                            <tr>
+                                <td style="font-family: Recoleta;font-size: 20px;text-align: justify;color: rgb(184,23,93);letter-spacing: -0.5px;font-weight: bold;line-height: 20px;border-style: hidden;border-color: rgb(127,106,143);text-shadow: 2px 2px 3px rgba(173,29,55,0);padding-left: 15px;padding-right: 29px;">
+                                    <p class="fw-light d-flex d-lg-flex m-auto" style="font-size: 18px;line-height: 29px;padding-top: 11px;margin-top: 0px;margin-bottom: 0px;padding-bottom: 11px;margin-left: 0px;color: rgb(170,116,139);padding-left: 15px;" id="fecha">Fecha</p>
+                                    <p class="d-flex d-lg-flex m-auto" id="resultadosnombre" style="font-size: 23px;line-height: 29px;padding-left: 15px;">Gastos mensuales de&nbsp;</p>
+                                </td>
                             </tr>
                             <tr>
-                                <td style="font-family: Recoleta;font-size: 20px;text-align: justify;color: rgb(184,23,93);letter-spacing: -0.5px;font-weight: bold;line-height: 20px;border-style: hidden;border-color: rgb(127,106,143);text-shadow: 2px 2px 3px rgba(173,29,55,0.23);padding-right: 35px;margin-top: 0px;padding-top: 0px;padding-left: 40px;">Vivienda:<br>Educación:<br>Blabla:<br>Blablablabla:</td>
+                                <td style="font-family: Recoleta;font-size: 20px;text-align: justify;color: rgb(184,23,93);letter-spacing: -0.5px;font-weight: bold;line-height: 20px;border-style: hidden;border-color: rgb(127,106,143);padding-left: 20px;padding-right: 22px;">
+                                    <div class="table-responsive fw-light" style="margin-left: 0px;padding-left: 6px;">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th>Categoría</th>
+                                                    <th class="text-end" style="text-align: right;">Gasto</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="table-group-divider">
+                                                <tr style="font-size: 18px;">
+                                                    <td class="fw-light">Vivienda</td>
+                                                    <td class="font-monospace" id="totalvivienda" style="text-align: right;">$</td>
+                                                </tr>
+                                                <tr style="font-size: 18px;">
+                                                    <td>Alimentación</td>
+                                                    <td class="font-monospace" id="totalalimentacion" style="text-align: right;">$</td>
+                                                </tr>
+                                                <tr style="font-size: 18px;">
+                                                    <td>Educación</td>
+                                                    <td class="font-monospace" id="totaleducacion" style="text-align: right;">$</td>
+                                                </tr>
+                                                <tr style="font-size: 18px;">
+                                                    <td>Salud</td>
+                                                    <td class="font-monospace" id="totalsalud" style="text-align: right;">$</td>
+                                                </tr>
+                                                <tr style="font-size: 18px;">
+                                                    <td>Vestuario</td>
+                                                    <td class="font-monospace" id="totalvestuario" style="text-align: right;">$</td>
+                                                </tr>
+                                                <tr style="font-size: 18px;">
+                                                    <td>Recreación¹</td>
+                                                    <td class="font-monospace" id="totalrecreacion" style="text-align: right;">$</td>
+                                                </tr>
+                                                <tr style="font-size: 18px;">
+                                                    <td>Higiene</td>
+                                                    <td class="font-monospace" id="totalhigiene" style="text-align: right;">$</td>
+                                                </tr>
+                                                <tr style="font-size: 18px;">
+                                                    <td class="text-nowrap" style="width: 178.5px;font-size: 16px;">Labores de cuidado²</td>
+                                                    <td class="font-monospace" id="totalcuidado" style="text-align: right;">$</td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot>
+                                                <tr>
+                                                    <td class="fw-semibold text-end" style="background: #ffdbf7;color: rgb(70,7,108);">TOTAL&nbsp;</td>
+                                                    <td class="font-monospace fw-semibold text-end" id="totalfinal" style="background: #ffdbf7;color: rgb(70,7,108);text-align: right;">$</td>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
+                </div>
+                <div class="row" id="infofinal" style="margin-top: -11px;">
+                    <div class="col" style="padding-left: 48px;padding-bottom: 0px;margin-bottom: 10px;">
+                        <p style="line-height: 20px;margin-left: -21px;font-size: 14px;text-align: justify;margin-right: 10px;color: rgb(56,84,157);"><strong>Presiona IMPRIMIR para imprimir esta planilla de gastos o guardarla como PDF.</strong><br>Presiona CONTACTARNOS para hablar con nosotros por WhatsApp con esta información ya lista.</p>
+                    </div>
+                </div>
+                <div class="row" id="imprimir" style="margin-top: -11px;padding-right: 68px;margin-right: -30px;">
+                    <div class="col" style="padding-bottom: 0px;margin-bottom: 10px;padding-left: 26px;"><button class="btn btn-primary" type="button" style="min-width: 132px;min-height: 43px;font-size: 24px;background: #e13d00;box-shadow: inset 0px -3px rgb(170,48,3), 1px 1px 5px 2px rgba(0,0,0,0.19);color: rgb(255,255,255);text-shadow: 2px 2px 0px rgb(123,33,0);font-weight: bold;letter-spacing: 0px;padding-right: 8px;padding-left: 8px;padding-bottom: 5px;padding-top: 0px;border-radius: 0;border: 2px hidden rgb(170,48,3);" onclick="window.print();">Imprimir</button></div>
+                    <div class="col d-flex justify-content-start align-items-end justify-content-md-center justify-content-lg-end justify-content-xl-end" style="padding-bottom: 0px;margin-bottom: 10px;padding-left: 0px;padding-right: 0px;margin-right: 0px;"><button class="btn btn-primary" type="button" style="min-width: 141px;min-height: 43px;font-size: 20px;background: #8aee95;box-shadow: inset 0px -3px rgb(97,213,109), 1px 1px 5px 2px rgba(0,0,0,0.19);color: rgb(255,255,255);text-shadow: 0px 0px 4px rgba(2,81,10,0.86);font-weight: bold;letter-spacing: 0px;padding-right: 8px;padding-left: 8px;padding-top: 0px;border-style: hidden;border-radius: 0px;padding-bottom: 2px;" onclick="SendWspMsg();">Contactarnos</button></div>
+                </div>
+                <div class="row" style="margin-top: 5px;">
+                    <div class="col-11 col-lg-11" style="padding-bottom: 0px;margin-bottom: 27px;padding-left: 28px;padding-right: 2px;">
+                        <p class="d-flex d-lg-flex m-auto" style="font-size: 14px;line-height: 17px;text-align: justify;font-weight: bold;">¿Qué dicen la ley y los tribunales sobre la Recreación y las Labores de cuidado?<br></p>
+                        <p class="d-flex d-lg-flex m-auto" style="font-size: 13px;line-height: 15px;text-align: justify;">(1) Corte Suprema, Rol Nº25266-19: “Los alimentos deben comprender no solo la comida, el vestuario y un lugar donde vivir, sino que lo preciso para que la persona que los solicita pueda desarrollarse espiritual y materialmente, lo que involucra la educación y la salud, también actividades recreativas y de esparcimiento, por lo tanto, la obligación de proporcionarlos no solo tiene por finalidad conservar o mantener la vida física de la persona del alimentario sino también propender a su desarrollo intelectual y moral.”<br> (2) Artículo 6° de la ley 14.908: “Toda resolución que fije una pensión de alimentos (...) deberá considerar, además de lo dispuesto en el Código Civil, la distribución y tasación económica del trabajo de cuidados para la sobrevivencia del&nbsp;alimentario.”</p>
+                    </div>
                 </div>
             </div>
         </div>
