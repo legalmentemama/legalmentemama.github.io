@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Tabla de gastos para mediación - LEGALMENTE MAMÁ</title>
+    <title>Tabla de gastos - LEGALMENTE MAMÁ</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.png">
     <meta property="og:type" content="website">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -46,7 +46,7 @@
                         </thead>
                         <tbody>
                             <tr id="introduccion">
-                                <td style="font-family: Recoleta;font-size: 20px;text-align: justify;color: rgb(184,23,93);letter-spacing: -0.5px;font-weight: bold;line-height: 20px;border-style: hidden;border-color: rgb(127,106,143);text-shadow: 2px 2px 3px rgba(173,29,55,0.23);padding-right: 35px;padding-left: 26px;margin-top: 0px;padding-top: 0px;">¡Calcula en simples pasos tus gastos de pensión con esta herramienta gratuita hecha con amor para ti!</td>
+                                <td style="font-family: Recoleta;font-size: 20px;text-align: justify;color: rgb(184,23,93);letter-spacing: -0.5px;line-height: 25px;border-style: hidden;border-color: rgb(127,106,143);text-shadow: 2px 2px 3px rgba(173,29,55,0.23);padding-right: 35px;padding-left: 26px;margin-top: 0px;padding-top: 0px;">Usa nuestra <b>calculadora de gastos</b> para descubrir tu gasto mensual promedio para un proceso de mediación.</td>
                             </tr>
                             <tr id="comofunciona" style="display: flex;border-style: hidden;padding-top: 8px;padding-bottom: 3px;padding-left: 23px;">
                                 <td style="display: flex;border-style: hidden;">
@@ -61,11 +61,18 @@
                                 <td style="padding-right: 7px;margin-left: 0px;padding-left: 0px;border-style: hidden;">
                                     <div class="accordion" role="tablist" id="accordion-1">
                                         <div class="accordion-item" id="cat-sobreti" title="" style="border-left-style: hidden;">
-                                            <h2 class="accordion-header" role="tab" style="border-left-style: hidden;"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-1" aria-expanded="true" aria-controls="accordion-1 .item-1" id="sobretibutton" style="font-family: Recoleta;font-size: 20px;font-weight: bold;color: rgb(255,255,255);background: rgb(246,198,210);box-shadow: 0px 0px, inset -61px 0px rgb(253,176,181), inset 0px 28px rgb(253,210,220);text-shadow: 2px 2px 6px rgb(216,85,77);"><strong>💁‍♀️&nbsp; SOBRE&nbsp; TU HIJO O HIJA</strong></button></h2>
+                                            <h2 class="accordion-header" role="tab" style="border-left-style: hidden;"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-1" aria-expanded="true" aria-controls="accordion-1 .item-1" id="sobretibutton" style="font-family: Recoleta;font-size: 20px;font-weight: bold;color: rgb(255,255,255);background: rgb(246,198,210);box-shadow: 0px 0px, inset -61px 0px rgb(253,176,181), inset 0px 28px rgb(253,210,220);text-shadow: 2px 2px 6px rgb(216,85,77);"><strong>💁‍♀️&nbsp;&nbsp;SOBRE&nbsp;&nbsp;TUS&nbsp;&nbsp;HIJOS</strong></button></h2>
                                             <div class="accordion-collapse collapse show item-1" role="tabpanel" id="sobretibuttoncontent">
                                                 <div class="accordion-body">
+						    <div class="row" id="inputhijosmediacion">
+                                                        <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;color: rgb(6,7,60);">• ¿Por cuántos hijos estás asistiendo a mediación?</label></div>
+                                                        <div class="col-12 col-md-2 col-lg-1 col-xl-2 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,248);min-height: 37px;"><input class="flex-grow-1 align-self-center" type="number" id="hijosmediacion" max="99" min="1" name="personas" step="1" style="text-align: left;min-width: 57px;border-style: hidden;" placeholder="Ingresa un número"></div>
+                                                    </div>
+                                                    <div class="row" id="errorhijosmediacion" style="display: none;">
+                                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="padding-left: 0px;padding-right: 0px;"><label class="col-form-label d-flex justify-content-end mx-auto" style="letter-spacing: -0.5px;background: rgba(215,48,34,0.07);color: rgb(210,13,1);padding-left: 11px;padding-right: 7px;text-align: justify;">El mínimo de hijos es 1</label></div>
+                                                    </div>
                                                     <div class="row">
-                                                        <div class="col-12 col-sm-9 col-md-9 col-lg-12 col-xl-12" style="padding-left: 4px;"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cómo se llama tu hijo o hija por quien vas a solicitar la pensión?&nbsp;</label></div>
+                                                        <div class="col-12 col-sm-9 col-md-9 col-lg-12 col-xl-12" style="padding-left: 4px;"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cómo se llama tu hijo o hija? Si es más de un hijo o hija, sepáralos con coma.&nbsp;</label></div>
                                                     </div>
                                                     <div class="row">
                                                         <div class="col-12 col-md-2 col-lg-1 col-xl-1 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,248);min-height: 37px;padding-right: 3px;padding-left: 3px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-triangle-fill d-inline-flex align-self-center" style="transform: rotate(90deg);padding-left: 0px;margin-left: 4px;border-style: none;color: rgb(251,244,247);">
@@ -82,6 +89,9 @@
                                             <h2 class="accordion-header" role="tab"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-2" aria-expanded="true" aria-controls="accordion-1 .item-2" id="viviendabutton" style="font-family: Recoleta;font-size: 20px;font-weight: bold;color: rgb(255,255,255);background: rgb(246,198,210);box-shadow: 0px 0px, inset -61px 0px rgb(253,176,181), inset 0px 28px rgb(253,210,220);text-shadow: 2px 2px 6px rgb(216,85,77);"><br><strong>🏡 VIVIENDA</strong></button></h2>
                                             <div class="accordion-collapse collapse show item-2" role="tabpanel" id="viviendabuttoncontent">
                                                 <div class="accordion-body">
+						    <div class="row">
+							<label style="color: rgb(6,7,60);">En esta categoría debes considerar los gastos TOTALES de la vivienda, no solo de tus hijos por quienes asistes a la mediación.</label><br><br><br>
+						    </div>
                                                     <div class="row" id="inputpersonas">
                                                         <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuántas personas viven en tu casa, incluidos tú y tus hijos?</label></div>
                                                         <div class="col-12 col-md-2 col-lg-1 col-xl-2 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,248);min-height: 37px;"><input class="flex-grow-1 align-self-center" type="number" id="personas" max="20" min="2" name="personas" step="1" style="text-align: left;min-width: 57px;border-style: hidden;" placeholder="Ingresa un número"></div>
@@ -89,7 +99,7 @@
                                                     <div class="row" id="errorpersonas" style="display: none;">
                                                         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="padding-left: 0px;padding-right: 0px;"><label class="col-form-label d-flex justify-content-end mx-auto" style="letter-spacing: -0.5px;background: rgba(215,48,34,0.07);color: rgb(210,13,1);padding-left: 11px;padding-right: 7px;text-align: justify;">El mínimo de personas es 2 (tú y tu hijo o hija)</label></div>
                                                     </div>
-                                                    <div class="row" id="inputarriendo" style="margin-top: 8px;">
+						    <div class="row" id="inputarriendo" style="margin-top: 8px;">
                                                         <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto gastas en arriendo o dividendo al mes?</label></div>
                                                         <div class="col-12 col-md-2 col-lg-1 col-xl-2 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,228);min-height: 37px;padding-left: 2px;">
                                                             <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="arriendo" max="999999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto">
@@ -142,7 +152,7 @@
                                             <div class="accordion-collapse collapse show item-3" role="tabpanel" id="alimentacionbuttoncontent">
                                                 <div class="accordion-body">
                                                     <div class="row" id="inputsuperm" style="margin-top: 8px;">
-                                                        <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto gastas en el supermercado al mes?</label></div>
+							<div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto gastas en el supermercado al mes en tus hijos?</label></div>
                                                         <div class="col-12 col-md-2 col-lg-1 col-xl-2 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,248);min-height: 37px;padding-left: 2px;">
                                                             <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="superm" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto">
                                                         </div>
@@ -151,7 +161,7 @@
                                                         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="padding-left: 0px;padding-right: 0px;"><label class="col-form-label d-flex justify-content-end mx-auto" style="letter-spacing: -0.5px;background: rgba(215,48,34,0.07);color: rgb(210,13,1);padding-left: 11px;padding-right: 7px;text-align: justify;">Debes ingresar un monto. Si no tienes gastos de compras en supermercados, puedes ingresar $0.</label></div>
                                                     </div>
                                                     <div class="row" id="inputferia" style="margin-top: 8px;">
-                                                        <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto gastas en la feria al mes, en promedio?</label></div>
+                                                        <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto gastas en la feria al mes en tus hijos?</label></div>
                                                         <div class="col-12 col-md-2 col-lg-1 col-xl-2 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,228);min-height: 37px;padding-left: 2px;">
                                                             <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="feria" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto">
                                                         </div>
@@ -160,7 +170,7 @@
                                                         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="padding-left: 0px;padding-right: 0px;"><label class="col-form-label d-flex justify-content-end mx-auto" style="letter-spacing: -0.5px;background: rgba(215,48,34,0.07);color: rgb(210,13,1);padding-left: 11px;padding-right: 7px;text-align: justify;">Debes ingresar un monto. Si no gastas dinero en ferias, puedes ingresar $0.</label></div>
                                                     </div>
                                                     <div class="row" id="inputalmacen" style="margin-top: 8px;">
-                                                        <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto gastas en almacenes o negocios de barrio al mes?</label></div>
+                                                        <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto gastas en almacenes o negocios al mes en tus hijos?</label></div>
                                                         <div class="col-12 col-md-2 col-lg-1 col-xl-2 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,248);min-height: 37px;padding-left: 2px;">
                                                             <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="almacen" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto">
                                                         </div>
@@ -176,31 +186,31 @@
                                             <div class="accordion-collapse collapse show item-4" role="tabpanel" id="educacionbuttoncontent">
                                                 <div class="accordion-body">
                                                     <div class="row" id="inputarancel" style="margin-top: 8px;">
-                                                        <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto gastas en la mensualidad escolar o universitaria de tu hijo o hija?&nbsp;</label></div>
+                                                        <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto gastas en la mensualidad escolar o universitaria de tus hijos?&nbsp;</label></div>
                                                         <div class="col-12 col-md-2 col-lg-1 col-xl-2 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,228);min-height: 37px;padding-left: 2px;">
                                                             <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="arancel" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto">
                                                         </div>
                                                     </div>
                                                     <div class="row" id="errorarancel" style="display: none;">
-                                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="padding-left: 0px;padding-right: 0px;"><label class="col-form-label d-flex justify-content-end mx-auto" style="letter-spacing: -0.5px;background: rgba(215,48,34,0.07);color: rgb(210,13,1);padding-left: 11px;padding-right: 7px;text-align: justify;">Debes ingresar un monto. Si no gastas en colegio o universidad para tu hija o hijo, puedes ingresar $0.</label></div>
+                                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="padding-left: 0px;padding-right: 0px;"><label class="col-form-label d-flex justify-content-end mx-auto" style="letter-spacing: -0.5px;background: rgba(215,48,34,0.07);color: rgb(210,13,1);padding-left: 11px;padding-right: 7px;text-align: justify;">Debes ingresar un monto. Si no gastas en colegio o universidad para tus hijos, puedes ingresar $0.</label></div>
                                                     </div>
                                                     <div class="row" id="inputtransporte" style="margin-top: 8px;">
-                                                        <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto gastas en el transporte para tu hija o hijo? (micro, furgón, bencina, etc.)&nbsp;</label></div>
+                                                        <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto gastas en el transporte para tus hijos? (micro, furgón, bencina, etc.)&nbsp;</label></div>
                                                         <div class="col-12 col-md-2 col-lg-1 col-xl-2 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,248);min-height: 37px;padding-left: 2px;">
                                                             <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="transporte" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto">
                                                         </div>
                                                     </div>
                                                     <div class="row" id="errortransporte" style="display: none;">
-                                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="padding-left: 0px;padding-right: 0px;"><label class="col-form-label d-flex justify-content-end mx-auto" style="letter-spacing: -0.5px;background: rgba(215,48,34,0.07);color: rgb(210,13,1);padding-left: 11px;padding-right: 7px;text-align: justify;">Debes ingresar un monto. Si no gastas en transporte para tu hija o hijo, puedes ingresar $0.</label></div>
+                                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="padding-left: 0px;padding-right: 0px;"><label class="col-form-label d-flex justify-content-end mx-auto" style="letter-spacing: -0.5px;background: rgba(215,48,34,0.07);color: rgb(210,13,1);padding-left: 11px;padding-right: 7px;text-align: justify;">Debes ingresar un monto. Si no gastas en transporte para tus hijos, puedes ingresar $0.</label></div>
                                                     </div>
                                                     <div class="row" id="inpututiles" style="margin-top: 8px;">
-                                                        <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto gastas en los útiles escolares de tu hijo o hija al mes?</label></div>
+                                                        <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto gastas en los útiles escolares de tus hijos al mes?</label></div>
                                                         <div class="col-12 col-md-2 col-lg-1 col-xl-2 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,228);min-height: 37px;padding-left: 2px;">
                                                             <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="utiles" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto">
                                                         </div>
                                                     </div>
                                                     <div class="row" id="errorutiles" style="display: none;">
-                                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="padding-left: 0px;padding-right: 0px;"><label class="col-form-label d-flex justify-content-end mx-auto" style="letter-spacing: -0.5px;background: rgba(215,48,34,0.07);color: rgb(210,13,1);padding-left: 11px;padding-right: 7px;text-align: justify;">Debes ingresar un monto. Si no gastas en útiles escolares para tu hijo o hija, puedes ingresar $0.</label></div>
+                                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="padding-left: 0px;padding-right: 0px;"><label class="col-form-label d-flex justify-content-end mx-auto" style="letter-spacing: -0.5px;background: rgba(215,48,34,0.07);color: rgb(210,13,1);padding-left: 11px;padding-right: 7px;text-align: justify;">Debes ingresar un monto. Si no gastas en útiles escolares para tus hijos, puedes ingresar $0.</label></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -210,7 +220,7 @@
                                             <div class="accordion-collapse collapse show item-5" role="tabpanel" id="saludbuttoncontent">
                                                 <div class="accordion-body">
                                                     <div class="row" id="inputconsultas" style="margin-top: 8px;">
-                                                        <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto gastas en consultas médicas para tu hijo o hija al mes?</label></div>
+                                                        <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto gastas en consultas médicas para tus hijos al mes?</label></div>
                                                         <div class="col-12 col-md-2 col-lg-1 col-xl-2 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,248);min-height: 37px;padding-left: 2px;">
                                                             <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="consultas" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto">
                                                         </div>
@@ -219,7 +229,7 @@
                                                         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="padding-left: 0px;padding-right: 0px;"><label class="col-form-label d-flex justify-content-end mx-auto" style="letter-spacing: -0.5px;background: rgba(215,48,34,0.07);color: rgb(210,13,1);padding-left: 11px;padding-right: 7px;text-align: justify;">Debes ingresar un monto. Si no gastas en consultas médicas, puedes ingresar $0.</label></div>
                                                     </div>
                                                     <div class="row" id="inputmedicamentos" style="margin-top: 8px;">
-                                                        <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto gastas en medicamentos y fórmula (relleno) para tu hijo o hija al mes?</label></div>
+                                                        <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto gastas en medicamentos y fórmula (relleno) para tus hijos al mes?</label></div>
                                                         <div class="col-12 col-md-2 col-lg-1 col-xl-2 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,228);min-height: 37px;padding-left: 2px;">
                                                             <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="medicamentos" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto">
                                                         </div>
@@ -235,22 +245,22 @@
                                             <div class="accordion-collapse collapse show item-6" role="tabpanel" id="vestuariobuttoncontent">
                                                 <div class="accordion-body">
                                                     <div class="row" id="inputropa" style="margin-top: 8px;">
-                                                        <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto gastas en ropa para tu hija o hijo al mes? (Incluido el uniforme escolar)</label></div>
+                                                        <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto gastas en ropa para tus hijos al mes? (Incluido el uniforme escolar)</label></div>
                                                         <div class="col-12 col-md-2 col-lg-1 col-xl-2 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,248);min-height: 37px;padding-left: 2px;">
                                                             <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="ropa" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto">
                                                         </div>
                                                     </div>
                                                     <div class="row" id="errorropa" style="display: none;">
-                                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="padding-left: 0px;padding-right: 0px;"><label class="col-form-label d-flex justify-content-end mx-auto" style="letter-spacing: -0.5px;background: rgba(215,48,34,0.07);color: rgb(210,13,1);padding-left: 11px;padding-right: 7px;text-align: justify;">Debes ingresar un monto. Si no gastas en ropa para tu hijo o hija, puedes ingresar $0.</label></div>
+                                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="padding-left: 0px;padding-right: 0px;"><label class="col-form-label d-flex justify-content-end mx-auto" style="letter-spacing: -0.5px;background: rgba(215,48,34,0.07);color: rgb(210,13,1);padding-left: 11px;padding-right: 7px;text-align: justify;">Debes ingresar un monto. Si no gastas en ropa para tus hijos, puedes ingresar $0.</label></div>
                                                     </div>
                                                     <div class="row" id="inputcalzado" style="margin-top: 8px;">
-                                                        <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto gastas en calzado para tu hijo o hija al mes? (Incluido calzado escolar)</label></div>
+                                                        <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto gastas en calzado para tus hijos al mes? (Incluido calzado escolar)</label></div>
                                                         <div class="col-12 col-md-2 col-lg-1 col-xl-2 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,228);min-height: 37px;padding-left: 2px;">
                                                             <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="calzado" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto">
                                                         </div>
                                                     </div>
                                                     <div class="row" id="errorcalzado" style="display: none;">
-                                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="padding-left: 0px;padding-right: 0px;"><label class="col-form-label d-flex justify-content-end mx-auto" style="letter-spacing: -0.5px;background: rgba(215,48,34,0.07);color: rgb(210,13,1);padding-left: 11px;padding-right: 7px;text-align: justify;">Debes ingresar un monto. Si no gastas en calzado para tu hijo o hija, puedes ingresar $0.</label></div>
+                                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="padding-left: 0px;padding-right: 0px;"><label class="col-form-label d-flex justify-content-end mx-auto" style="letter-spacing: -0.5px;background: rgba(215,48,34,0.07);color: rgb(210,13,1);padding-left: 11px;padding-right: 7px;text-align: justify;">Debes ingresar un monto. Si no gastas en calzado para tus hijos, puedes ingresar $0.</label></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -260,16 +270,16 @@
                                             <div class="accordion-collapse collapse show item-7" role="tabpanel" id="recreacionbuttoncontent">
                                                 <div class="accordion-body">
                                                     <div class="row" id="inputesparcimiento" style="margin-top: 8px;">
-                                                        <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto gastas en actividades recreativas para tu hijo o hija al mes? Esto incluye paseos, mantención de mascotas, vacaciones, etc.</label></div>
+                                                        <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto gastas en actividades recreativas para tus hijos al mes? Esto incluye paseos, mantención de mascotas, vacaciones, etc.</label></div>
                                                         <div class="col-12 col-md-2 col-lg-1 col-xl-2 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,248);min-height: 37px;padding-left: 2px;">
                                                             <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="esparcimiento" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto">
                                                         </div>
                                                     </div>
                                                     <div class="row" id="erroresparcimiento" style="display: none;">
-                                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="padding-left: 0px;padding-right: 0px;"><label class="col-form-label d-flex justify-content-end mx-auto" style="letter-spacing: -0.5px;background: rgba(215,48,34,0.07);color: rgb(210,13,1);padding-left: 11px;padding-right: 7px;text-align: justify;">Debes ingresar un monto. Si no gastas en recreación para tu hijo o hija, puedes ingresar $0.</label></div>
+                                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="padding-left: 0px;padding-right: 0px;"><label class="col-form-label d-flex justify-content-end mx-auto" style="letter-spacing: -0.5px;background: rgba(215,48,34,0.07);color: rgb(210,13,1);padding-left: 11px;padding-right: 7px;text-align: justify;">Debes ingresar un monto. Si no gastas en recreación para tus hijos, puedes ingresar $0.</label></div>
                                                     </div>
                                                     <div class="row" id="inputtalleres" style="margin-top: 8px;">
-                                                        <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto gastas en talleres o cursos para tu hijo o hija al mes?</label></div>
+                                                        <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto gastas en talleres o cursos para tus hijos al mes?</label></div>
                                                         <div class="col-12 col-md-2 col-lg-1 col-xl-2 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,228);min-height: 37px;padding-left: 2px;">
                                                             <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="talleres" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto">
                                                         </div>
@@ -285,7 +295,7 @@
                                             <div class="accordion-collapse collapse show item-8" role="tabpanel" id="higienebuttoncontent">
                                                 <div class="accordion-body">
                                                     <div class="row" id="inputaseo" style="margin-top: 8px;">
-                                                        <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto gastas en objetos de aseo personal para tu hijo o hija al mes?</label></div>
+                                                        <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto gastas en objetos de aseo personal para tus hijos al mes?</label></div>
                                                         <div class="col-12 col-md-2 col-lg-1 col-xl-2 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,248);min-height: 37px;padding-left: 2px;">
                                                             <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="aseo" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto">
                                                         </div>
@@ -294,7 +304,7 @@
                                                         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="padding-left: 0px;padding-right: 0px;"><label class="col-form-label d-flex justify-content-end mx-auto" style="letter-spacing: -0.5px;background: rgba(215,48,34,0.07);color: rgb(210,13,1);padding-left: 11px;padding-right: 7px;text-align: justify;">Debes ingresar un monto. Si no gastas en objetos de aseo personal, puedes ingresar $0.</label></div>
                                                     </div>
                                                     <div class="row" id="inputdiapers" style="margin-top: 8px;">
-                                                        <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto gastas en pañales para tu hija o hijo al mes?</label></div>
+                                                        <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto gastas en pañales para tus hijos al mes?</label></div>
                                                         <div class="col-12 col-md-2 col-lg-1 col-xl-2 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,228);min-height: 37px;padding-left: 2px;">
                                                             <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="diapers" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto">
                                                         </div>
@@ -310,7 +320,7 @@
                                             <div class="accordion-collapse collapse show item-9" role="tabpanel" id="laboresbuttoncontent">
                                                 <div class="accordion-body">
                                                     <div class="row" id="inputsalacuna" style="margin-top: 8px;">
-                                                        <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto pagas al mes por la salacuna para tu hija o hijo?</label></div>
+                                                        <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto pagas al mes por la salacuna para tus hijos?</label></div>
                                                         <div class="col-12 col-md-2 col-lg-1 col-xl-2 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,248);min-height: 37px;padding-left: 2px;">
                                                             <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="salacuna" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto">
                                                         </div>
@@ -319,7 +329,7 @@
                                                         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="padding-left: 0px;padding-right: 0px;"><label class="col-form-label d-flex justify-content-end mx-auto" style="letter-spacing: -0.5px;background: rgba(215,48,34,0.07);color: rgb(210,13,1);padding-left: 11px;padding-right: 7px;text-align: justify;">Debes ingresar un monto. Si no gastas en salacuna, puedes ingresar $0.</label></div>
                                                     </div>
                                                     <div class="row" id="inputninera" style="margin-top: 8px;">
-                                                        <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto le pagas a una niñera/o para que vean a tu hijo/a cada mes?</label></div>
+                                                        <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">¿Cuánto le pagas a un/a niñera/o para que vea a tus hijos cada mes?</label></div>
                                                         <div class="col-12 col-md-2 col-lg-1 col-xl-2 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,228);min-height: 37px;padding-left: 2px;">
                                                             <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="ninera" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto">
                                                         </div>
@@ -328,7 +338,7 @@
                                                         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="padding-left: 0px;padding-right: 0px;"><label class="col-form-label d-flex justify-content-end mx-auto" style="letter-spacing: -0.5px;background: rgba(215,48,34,0.07);color: rgb(210,13,1);padding-left: 11px;padding-right: 7px;text-align: justify;">Debes ingresar un monto. Si no gastas en niñeros, puedes ingresar $0.</label></div>
                                                     </div>
                                                     <div class="row" id="inputmadre" style="margin-top: 8px;">
-                                                        <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">Si tuvieras que ponerle un valor al cuidado que TÚ proporcionas a tu hijo o hija (como si fuera un monto mensual que le pagas a un cuidador), ¿cuánto vale ese cuidado que proporcionas?&nbsp;</label></div>
+                                                        <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><label class="col-form-label d-inline-flex" style="text-align: justify;letter-spacing: -0.5px;">Si tuvieras que ponerle un valor al cuidado que TÚ proporcionas a tus hijos (como si fuera un monto mensual que le pagas a un cuidador), ¿cuánto vale ese cuidado que proporcionas?&nbsp;</label></div>
                                                         <div class="col-12 col-md-2 col-lg-1 col-xl-2 offset-xl-0 d-inline-flex flex-grow-1 justify-content-end align-content-stretch" style="background: rgb(255,224,248);min-height: 37px;padding-left: 2px;">
                                                             <p class="align-self-center my-auto" style="margin-right: 1px;color: rgb(0,0,0);transform: translateX(11px) translateY(1px);font-size: 15px;">$</p><input class="flex-grow-1 align-self-center" type="number" id="madre" max="9999999" min="0" name="campodos" step="1000" style="text-align: left;min-width: 57px;border-style: hidden;padding-left: 12px;" placeholder="Ingresa un monto">
                                                         </div>
@@ -456,7 +466,7 @@
         </div>
     </div>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/script.min.js"></script>
+    <script src="assets/js/scriptnormal.js"></script>
 </body>
 
 </html>
