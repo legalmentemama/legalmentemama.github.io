@@ -108,8 +108,17 @@ function CalculoFinal() {
         (document.getElementById("errorcalculo").style.display = "none"), (document.getElementById("calculopension").style.display = "block"), (document.getElementById("formulario").style.display = "none");
         document.getElementById("calculopension").scrollIntoView({behavior: "smooth"});
 
-        let porcentajepadre = (tempingresosmadre+tempingresospadre > 0)? (tempingresospadre/(tempingresospadre+tempingresosmadre)) : 1;
+        let porcentajepadre = 0;
+        let ingresostotales = tempingresosmadre + tempingresospadre;
+        
+        if (ingresostotales > 0){
+            porcentajepadre = tempingresospadre / ingresostotales;
+        } else {
+            porcentajepadre = 0.5;
+        }
+        
         let costoparapadre = tempgastostotales * porcentajepadre;
+        
         let pensionapagar = 0;
 
         if (tempingresospadre <= 500000) {
@@ -134,8 +143,8 @@ function CalculoFinal() {
             <br>
             <b>RESULTADOS:</b><br>
             <br>
-            PORCENTAJE DEL COSTO QUE PAGA EL PADRE: ${porcentajepadre*100}%<br>
-            PORCENTAJE DEL COSTO QUE PAGA LA MADRE: ${(1 - porcentajepadre)*100}%<br>
+            PORCENTAJE DEL COSTO QUE PAGA EL PADRE: ${Math.round(porcentajepadre*100)}%<br>
+            PORCENTAJE DEL COSTO QUE PAGA LA MADRE: ${Math.round((1 - porcentajepadre)*100)}%<br>
             PENSIÓN QUE DEBE PAGAR EL PADRE: $${pensionapagar}<br>
             <br>
             <br>
