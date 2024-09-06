@@ -90,10 +90,14 @@ function IsNumberValid(e) {
 }
 
 function CalculoFinal() {
-    let temphijosmediacion = document.getElementById("hijosmediacion").value;
-    let tempgastostotales = document.getElementById("gastostotales").value;
-    let tempingresospadre = document.getElementById("ingresospadre").value;
-    let tempingresosmadre = document.getElementById("ingresosmadre").value;
+    var temphijosmediacion = parseInt(document.getElementById("hijosmediacion").value);
+    var tempgastostotales = parseInt(document.getElementById("gastostotales").value);
+    var tempingresospadre = parseInt(document.getElementById("ingresospadre").value);
+    var tempingresosmadre = parseInt(document.getElementById("ingresosmadre").value);
+    var porcentajepadre = 0;
+    var ingresostotales = 0;
+    var costoparapadre = 0;
+    var pensionapagar = 0;
     
     let e = temphijosmediacion;
     e < 1 || e % 1 != 0 || null == e || NaN == e || e.toString().includes("e") || e.toString().includes("+") || e.toString().includes("-") ? (DisplayError("hijosmediacion"), (hijosmediacionok = !1)) : (RemoveError("hijosmediacion"), (hijosmediacionok = !0));
@@ -108,8 +112,7 @@ function CalculoFinal() {
         (document.getElementById("errorcalculo").style.display = "none"), (document.getElementById("calculopension").style.display = "block"), (document.getElementById("formulario").style.display = "none");
         document.getElementById("calculopension").scrollIntoView({behavior: "smooth"});
 
-        let porcentajepadre = 0;
-        let ingresostotales = tempingresosmadre + tempingresospadre;
+        ingresostotales = tempingresosmadre + tempingresospadre;
         
         if (ingresostotales > 0){
             porcentajepadre = tempingresospadre / ingresostotales;
@@ -117,10 +120,8 @@ function CalculoFinal() {
             porcentajepadre = 0.5;
         }
         
-        let costoparapadre = tempgastostotales * porcentajepadre;
+        costoparapadre = tempgastostotales * porcentajepadre;
         
-        let pensionapagar = 0;
-
         if (tempingresospadre <= 500000) {
             if (temphijosmediacion >= 2){
                 pensionapagar = (150000 * temphijosmediacion);
