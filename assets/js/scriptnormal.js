@@ -298,5 +298,5 @@ if (urlParams.has("state")) {
 }
 function SendWspMsg() {
     let e = "";
-    (e = "https://api.whatsapp.com/send/?phone=56953560843&text=Hola, ¿me ayudan con mi caso?%0DRellené el formulario de Legalmente Mamá ♥%0D%0Dlegalmentemama.github.io/?state=" + globalStateString), window.open(e, "_blank");
+    (e = "https://api.whatsapp.com/send/?phone=56953560843&text=Hola, ¿me ayudan con mi caso?%0DRellené el formulario de Legalmente Mamá ♥%0D%0Dlegalmentemama.github.io/?state=" + globalStateString.replace(" ", "%20")), window.open(e, "_blank");
 }
