@@ -218,7 +218,7 @@ function CalculoFinal() {
                 else n = !1;
             parseInt(tempvalue), (formStateString = formStateString + e + tempvalue + "!"), (globalStateString = formStateString);
         }
-        history.pushState(null, "", "index.html?state=" + formStateString);
+        history.pushState(null, "", "index2.html?state=" + formStateString);
     } else
         (document.getElementById("errorcalculo").style.display = "table-row"),
             nombreok || ShowAccordion("sobretibutton"),
