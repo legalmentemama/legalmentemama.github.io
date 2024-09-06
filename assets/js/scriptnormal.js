@@ -244,7 +244,7 @@ document.getElementById("personas").addEventListener("focusout", () => {
 }),
     document.getElementById("nombre").addEventListener("focusout", () => {
         let e = document.getElementById("nombre").value;
-        e.toString().length < 1 || null == e || null == e || " " == e || !e.toString().match(/^[a-zA-Z\u00C0-\u024F\u1E00-\u1EFF\s'\,]+$/gi) || e.toString().length > 50
+        e.toString().length < 1 || null == e || null == e || " " == e || !e.toString().match(/^[a-zA-Z\u00C0-\u024F\u1E00-\u1EFF\s'\,]+$/gi) || e.toString().length > 90
             ? (DisplayError("nombre"), (nombreok = !1))
             : (RemoveError("nombre"), (nombreok = !0));
     });
