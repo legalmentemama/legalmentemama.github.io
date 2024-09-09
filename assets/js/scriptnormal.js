@@ -271,8 +271,6 @@ if (urlParams.has("state")) {
     var tempArrayFix = tempState.split("!");
     var camposEnArray = tempArrayFix.slice(1);
     var nombreExtraido = tempArrayFix.slice(0,1);
-    console.log(("nombre extraido es " + nombreExtraido));
-    console.log(("el resto del string es " + camposEnArray));
     for (const [e, t] of Object.entries(camposEnArray)) {
         let n = !0;
         for (tempvalue = t; !0 === n; )
