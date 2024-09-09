@@ -268,8 +268,8 @@ if (urlParams.has("state")) {
     var tempState = urlParams.get("state");
     var remainingState = tempState;
     var tempvalue = "";
-    const camposEnArray = tempState.split("!").slice(1);
-    const nombreExtraido = tempState.slice(0,1);
+    var camposEnArray = tempState.split("!").slice(1);
+    var nombreExtraido = tempState.slice(0,1);
     console.log(("nombre extraido es " + nombreExtraido));
     console.log(("el resto del string es " + camposEnArray));
     for (const [e, t] of Object.entries(camposEnArray)) {
