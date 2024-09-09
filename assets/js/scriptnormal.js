@@ -24,6 +24,7 @@ window.innerWidth < 768 &&
 const miregex = "[0-9]";
 const regexespacio = /\s+/gi;
 const regexguion = /\-+/gi;
+const regexnombre = /^_.*a/g;
 
 var formStateString = "", globalStateString = "";
 
@@ -264,10 +265,11 @@ if (urlParams.has("state")) {
         arraycampos.forEach((element) => {
             (document.getElementById(element.id).value = "0"), eval?.("var " + element.id + "ok = true;");
         });
-    var tempState = urlParams.get("state"),
-        remainingState = tempState,
-        tempvalue = "";
-    const camposEnArray = tempState.split("!");
+    var tempState = urlParams.get("state");
+    remainingState = tempState;
+    tempvalue = "";
+    const camposEnArray = tempState.split("!").slice(1);
+    const nombreExtraido = tempState.slice(0,1);
     for (const [e, t] of Object.entries(camposEnArray)) {
         let n = !0;
         for (tempvalue = t; !0 === n; )
@@ -278,6 +280,7 @@ if (urlParams.has("state")) {
             else n = !1;
         camposEnArray[e] = tempvalue;
     }
+    camposEnArray = nombreExtraido.concat(camposEnArray);
     for (const e of Object.values(camposEnArray))
         "_" == e[0] && (document.getElementById("nombre").value = (e.slice(1)).replace(regexguion," ")),
             "a" == e[0] && (document.getElementById("personas").value = parseInt(e.slice(1))),
