@@ -266,8 +266,8 @@ if (urlParams.has("state")) {
             (document.getElementById(element.id).value = "0"), eval?.("var " + element.id + "ok = true;");
         });
     var tempState = urlParams.get("state");
-    remainingState = tempState;
-    tempvalue = "";
+    var remainingState = tempState;
+    var tempvalue = "";
     const camposEnArray = tempState.split("!").slice(1);
     const nombreExtraido = tempState.slice(0,1);
     console.log(("nombre extraido es " + nombreExtraido));
