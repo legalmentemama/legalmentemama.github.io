@@ -186,7 +186,7 @@ function CalculoFinal() {
             (document.getElementById("totalrecreacion").innerHTML = "$ " + calculoRecreacion.toString().replace(regexpuntos,".")),
             (document.getElementById("totalhigiene").innerHTML = "$ " + calculoHigiene.toString().replace(regexpuntos,".")),
             (document.getElementById("totalcuidado").innerHTML = "$ " + calculoLabores.toString().replace(regexpuntos,".")),
-            (document.getElementById("totalfinal").innerHTML = "$ " + (grantotal.toString().replace(regexpuntos,".")));
+            (document.getElementById("totalfinal").innerHTML = "$ " + (grantotal.toString().replace(regexpuntos,"."))),
 
         
         var tempnombre = document.getElementById("nombre").value.replace(regexespacio,"-");
