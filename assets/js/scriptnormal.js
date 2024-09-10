@@ -7,7 +7,7 @@ window.innerWidth < 768 &&
         (document.getElementById("imprimir").style.display = "none"),
             (document.getElementById("navbar").style.display = "none"),
             (document.getElementById("infofinal").style.display = "none"),
-            (document.getElementById("isotipo").style.transform = "translateX(-55px) scale(0.6)"),
+            (document.getElementById("isotipo").style.transform = "translateX(-40px) scale(0.6)"),
             (document.getElementById("logosolo").style.transform = "translateX(+15px) scale(0.6)"),
             (document.getElementById("cellmama").style.marginTop = "0px");
     }),
