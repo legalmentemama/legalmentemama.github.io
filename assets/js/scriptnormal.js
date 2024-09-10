@@ -140,11 +140,11 @@ function CalculoFinal() {
         let t = { timezone: "UTC", weekday: "long", year: "numeric", month: "long", day: "numeric" };
         document.getElementById("fecha").innerHTML = e.toLocaleString("es-CL", t);
 
-        var intPersonas = parseInt(document.getElementById("personas").value),
-            intArriendo = parseInt(document.getElementById("arriendo").value),
-            intLuz = parseInt(document.getElementById("luz").value),
-            intAgua = parseInt(document.getElementById("agua").value),
-            intInternet = parseInt(document.getElementById("internet").value),
+        var intPersonas = parseInt(document.getElementById("personas").value);
+        var intArriendo = parseInt(document.getElementById("arriendo").value);
+        var intLuz = parseInt(document.getElementById("luz").value);
+        var intAgua = parseInt(document.getElementById("agua").value);
+        var intInternet = parseInt(document.getElementById("internet").value),
             intCalefa = parseInt(document.getElementById("calefa").value),
             intSuperm = parseInt(document.getElementById("superm").value),
             intFeria = parseInt(document.getElementById("feria").value),
@@ -177,8 +177,8 @@ function CalculoFinal() {
 
 	//var fullNombres = (document.getElementById("nombre").value + " (" + intHijos + " hijos)").toString();
     var fullNombres = (document.getElementById("nombre").value + " (" + intHijos + (intHijos>1? " hijos)": " hijo/a)")).toString();
-        (document.getElementById("resultadosnombre").innerHTML += fullNombres),
-            (document.getElementById("totalvivienda").innerHTML = "$ " + calculoVivienda.toString().replace(regexpuntos,"."),
+    (document.getElementById("resultadosnombre").innerHTML += fullNombres);
+	(document.getElementById("totalvivienda").innerHTML = "$ " + calculoVivienda.toString().replace(regexpuntos,".")),
             (document.getElementById("totalalimentacion").innerHTML = "$ " + calculoAlimentacion.toString().replace(regexpuntos,".")),
             (document.getElementById("totaleducacion").innerHTML = "$ " + calculoEducacion.toString().replace(regexpuntos,".")),
             (document.getElementById("totalsalud").innerHTML = "$ " + calculoSalud.toString().replace(regexpuntos,".")),
@@ -186,7 +186,7 @@ function CalculoFinal() {
             (document.getElementById("totalrecreacion").innerHTML = "$ " + calculoRecreacion.toString().replace(regexpuntos,".")),
             (document.getElementById("totalhigiene").innerHTML = "$ " + calculoHigiene.toString().replace(regexpuntos,".")),
             (document.getElementById("totalcuidado").innerHTML = "$ " + calculoLabores.toString().replace(regexpuntos,".")),
-            (document.getElementById("totalfinal").innerHTML = "$ " + (grantotal.toString().replace(regexpuntos,"."))),
+            (document.getElementById("totalfinal").innerHTML = "$ " + grantotal.toString().replace(regexpuntos,"."));
 
         
         var tempnombre = document.getElementById("nombre").value.replace(regexespacio,"-");
