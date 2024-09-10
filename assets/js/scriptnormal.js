@@ -25,6 +25,8 @@ const miregex = "[0-9]";
 const regexespacio = /\s+/gi;
 const regexguion = /\-+/gi;
 const regexnombre = /^_.*a/g;
+const regexpuntos = /\B(?=(\d{3})+(?!\d))/gi;
+
 
 var formStateString = "", globalStateString = "";
 
@@ -176,15 +178,15 @@ function CalculoFinal() {
 	//var fullNombres = (document.getElementById("nombre").value + " (" + intHijos + " hijos)").toString();
     var fullNombres = (document.getElementById("nombre").value + " (" + intHijos + (intHijos>1? " hijos)": " hijo/a)")).toString();
         (document.getElementById("resultadosnombre").innerHTML += fullNombres),
-            (document.getElementById("totalvivienda").innerHTML = "$ " + calculoVivienda),
-            (document.getElementById("totalalimentacion").innerHTML = "$ " + calculoAlimentacion),
-            (document.getElementById("totaleducacion").innerHTML = "$ " + calculoEducacion),
-            (document.getElementById("totalsalud").innerHTML = "$ " + calculoSalud),
-            (document.getElementById("totalvestuario").innerHTML = "$ " + calculoVestuario),
-            (document.getElementById("totalrecreacion").innerHTML = "$ " + calculoRecreacion),
-            (document.getElementById("totalhigiene").innerHTML = "$ " + calculoHigiene),
-            (document.getElementById("totalcuidado").innerHTML = "$ " + calculoLabores),
-            (document.getElementById("totalfinal").innerHTML = "$ " + (grantotal));
+            (document.getElementById("totalvivienda").innerHTML = "$ " + calculoVivienda.toString().replace(regexpuntos,"."),
+            (document.getElementById("totalalimentacion").innerHTML = "$ " + calculoAlimentacion.toString().replace(regexpuntos,".")),
+            (document.getElementById("totaleducacion").innerHTML = "$ " + calculoEducacion.toString().replace(regexpuntos,".")),
+            (document.getElementById("totalsalud").innerHTML = "$ " + calculoSalud.toString().replace(regexpuntos,".")),
+            (document.getElementById("totalvestuario").innerHTML = "$ " + calculoVestuario.toString().replace(regexpuntos,".")),
+            (document.getElementById("totalrecreacion").innerHTML = "$ " + calculoRecreacion.toString().replace(regexpuntos,".")),
+            (document.getElementById("totalhigiene").innerHTML = "$ " + calculoHigiene.toString().replace(regexpuntos,".")),
+            (document.getElementById("totalcuidado").innerHTML = "$ " + calculoLabores.toString().replace(regexpuntos,".")),
+            (document.getElementById("totalfinal").innerHTML = "$ " + (grantotal.toString().replace(regexpuntos,".")));
 
         
         var tempnombre = document.getElementById("nombre").value.replace(regexespacio,"-");
