@@ -8,7 +8,9 @@ window.innerWidth < 768 &&
             (document.getElementById("navbar").style.display = "none"),
             (document.getElementById("infofinal").style.display = "none"),
             (document.getElementById("isotipo").style.transform = "translateX(-40px) scale(0.6)"),
+            (document.getElementById("resultados").style.marginTop = "0px"),
             (document.getElementById("logosolo").style.transform = "translateX(+15px) scale(0.6)"),
+            (document.getElementById("resultados").style.boxShadow = "0px 0px, 0px 0px"),
             (document.getElementById("cellmama").style.marginTop = "0px");
     }),
     addEventListener("afterprint", () => {
@@ -16,7 +18,9 @@ window.innerWidth < 768 &&
             (document.getElementById("navbar").style.display = "flex"),
             (document.getElementById("infofinal").style.display = "flex"),
             (document.getElementById("isotipo").style.transform = "translateX(0px) scale(1)"),
+            (document.getElementById("resultados").style.marginTop = "82px"),
             (document.getElementById("logosolo").style.transform = "translateX(0px) scale(1)"),
+            (document.getElementById("resultados").style.boxShadow = "0px -19px rgb(228,158,175), 0px 33px rgb(127,106,143), 0px 46px rgba(33,37,41,0.31), 0px -39px rgb(241,135,160)"),
             (document.getElementById("cellmama").style.marginTop = "18px");
     }),
     (document.getElementById("resultados").style.display = "none");
@@ -175,18 +179,72 @@ function CalculoFinal() {
 
     var grantotal = calculoVivienda + calculoAlimentacion + calculoEducacion + calculoSalud + calculoVestuario + calculoRecreacion + calculoHigiene + calculoLabores;
 
+    var rArriendo = ((intArriendo / intPersonas) * intHijos).toString().replace(regexpuntos,".");
+    var rLuz = ((intLuz / intPersonas) * intHijos).toString().replace(regexpuntos,".");
+    var rAgua = ((intAgua / intPersonas) * intHijos).toString().replace(regexpuntos,".");
+    var rInternet = ((intInternet / intPersonas) * intHijos).toString().replace(regexpuntos,".");
+    var rCalefa = ((intCalefa / intPersonas) * intHijos).toString().replace(regexpuntos,".");
+    var rSuperm = intSuperm.toString().replace(regexpuntos,".");
+    var rFeria = intFeria.toString().replace(regexpuntos,".");
+    var rAlmacen = intAlmacen.toString().replace(regexpuntos,".");
+    var rArancel = intArancel.toString().replace(regexpuntos,".");
+    var rTransporte = intTransporte.toString().replace(regexpuntos,".");
+    var rUtiles = intUtiles.toString().replace(regexpuntos,".");
+    var rConsultas = intConsultas.toString().replace(regexpuntos,".");
+    var rMedicamentos = intMedicamentos.toString().replace(regexpuntos,".");
+    var rRopa = intRopa.toString().replace(regexpuntos,".");
+    var rCalzado = intCalzado.toString().replace(regexpuntos,".");
+    var rEsparcimiento = intEsparcimiento.toString().replace(regexpuntos,".");
+    var rTalleres = intTalleres.toString().replace(regexpuntos,".");
+    var rAseo = intAseo.toString().replace(regexpuntos,".");
+    var rDiapers = intDiapers.toString().replace(regexpuntos,".");
+    var rSalacuna = intSalacuna.toString().replace(regexpuntos,".");
+    var rNinera = intNinera.toString().replace(regexpuntos,".");
+    var rMadre = intMadre.toString().replace(regexpuntos,".");
+
+
 	//var fullNombres = (document.getElementById("nombre").value + " (" + intHijos + " hijos)").toString();
     var fullNombres = (document.getElementById("nombre").value + " (" + intHijos + (intHijos>1? " hijos)": " hijo/a)")).toString();
     (document.getElementById("resultadosnombre").innerHTML += fullNombres);
-	(document.getElementById("totalvivienda").innerHTML = "$ " + calculoVivienda.toString().replace(regexpuntos,".")),
-            (document.getElementById("totalalimentacion").innerHTML = "$ " + calculoAlimentacion.toString().replace(regexpuntos,".")),
-            (document.getElementById("totaleducacion").innerHTML = "$ " + calculoEducacion.toString().replace(regexpuntos,".")),
-            (document.getElementById("totalsalud").innerHTML = "$ " + calculoSalud.toString().replace(regexpuntos,".")),
-            (document.getElementById("totalvestuario").innerHTML = "$ " + calculoVestuario.toString().replace(regexpuntos,".")),
-            (document.getElementById("totalrecreacion").innerHTML = "$ " + calculoRecreacion.toString().replace(regexpuntos,".")),
-            (document.getElementById("totalhigiene").innerHTML = "$ " + calculoHigiene.toString().replace(regexpuntos,".")),
-            (document.getElementById("totalcuidado").innerHTML = "$ " + calculoLabores.toString().replace(regexpuntos,".")),
-            (document.getElementById("totalfinal").innerHTML = "$ " + grantotal.toString().replace(regexpuntos,"."));
+    (document.getElementById("totalvivienda").innerHTML = "$ " + calculoVivienda.toString().replace(regexpuntos,".")),
+            (document.getElementById("detallevivienda").innerHTML = `
+            $ ${rArriendo}<br>
+            $ ${rLuz}<br>
+            $ ${rAgua}<br>
+            $ ${rInternet}<br>
+            $ ${rCalefa}<br>`),
+    (document.getElementById("totalalimentacion").innerHTML = "$ " + calculoAlimentacion.toString().replace(regexpuntos,".")),
+            (document.getElementById("detallealimentacion").innerHTML = `
+            $ ${rSuperm}<br>
+            $ ${rFeria}<br>
+            $ ${rAlmacen}<br>`),
+    (document.getElementById("totaleducacion").innerHTML = "$ " + calculoEducacion.toString().replace(regexpuntos,".")),
+            (document.getElementById("detalleeducacion").innerHTML = `
+            $ ${rArancel}<br>
+            $ ${rTransporte}<br>
+            $ ${rUtiles}<br>`),
+    (document.getElementById("totalsalud").innerHTML = "$ " + calculoSalud.toString().replace(regexpuntos,".")),
+            (document.getElementById("detallesalud").innerHTML = `
+            $ ${rConsultas}<br>
+            $ ${rMedicamentos}<br>`),
+    (document.getElementById("totalvestuario").innerHTML = "$ " + calculoVestuario.toString().replace(regexpuntos,".")),
+            (document.getElementById("detallevestuario").innerHTML = `
+            $ ${rRopa}<br>
+            $ ${rCalzado}<br>`),
+    (document.getElementById("totalrecreacion").innerHTML = "$ " + calculoRecreacion.toString().replace(regexpuntos,".")),
+            (document.getElementById("detallerecreacion").innerHTML = `
+            $ ${rEsparcimiento}<br>
+            $ ${rTalleres}<br>`),
+    (document.getElementById("totalhigiene").innerHTML = "$ " + calculoHigiene.toString().replace(regexpuntos,".")),
+            (document.getElementById("detallehigiene").innerHTML = `
+            $ ${rAseo}<br>
+            $ ${rDiapers}<br>`),
+    (document.getElementById("totalcuidado").innerHTML = "$ " + calculoLabores.toString().replace(regexpuntos,".")),
+            (document.getElementById("detallecuidado").innerHTML = `
+            $ ${rSalacuna}<br>
+            $ ${rNinera}<br>
+            $ ${rMadre}<br>`),
+    (document.getElementById("totalfinal").innerHTML = "$ " + grantotal.toString().replace(regexpuntos,"."));
 
         
         var tempnombre = document.getElementById("nombre").value.replace(regexespacio,"-");
