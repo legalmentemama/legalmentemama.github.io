@@ -179,28 +179,28 @@ function CalculoFinal() {
 
     var grantotal = calculoVivienda + calculoAlimentacion + calculoEducacion + calculoSalud + calculoVestuario + calculoRecreacion + calculoHigiene + calculoLabores;
 
-    var rArriendo = ((intArriendo / intPersonas) * intHijos).toString().replace(regexpuntos,".");
-    var rLuz = ((intLuz / intPersonas) * intHijos).toString().replace(regexpuntos,".");
-    var rAgua = ((intAgua / intPersonas) * intHijos).toString().replace(regexpuntos,".");
-    var rInternet = ((intInternet / intPersonas) * intHijos).toString().replace(regexpuntos,".");
-    var rCalefa = ((intCalefa / intPersonas) * intHijos).toString().replace(regexpuntos,".");
-    var rSuperm = intSuperm.toString().replace(regexpuntos,".");
-    var rFeria = intFeria.toString().replace(regexpuntos,".");
-    var rAlmacen = intAlmacen.toString().replace(regexpuntos,".");
-    var rArancel = intArancel.toString().replace(regexpuntos,".");
-    var rTransporte = intTransporte.toString().replace(regexpuntos,".");
-    var rUtiles = intUtiles.toString().replace(regexpuntos,".");
-    var rConsultas = intConsultas.toString().replace(regexpuntos,".");
-    var rMedicamentos = intMedicamentos.toString().replace(regexpuntos,".");
-    var rRopa = intRopa.toString().replace(regexpuntos,".");
-    var rCalzado = intCalzado.toString().replace(regexpuntos,".");
-    var rEsparcimiento = intEsparcimiento.toString().replace(regexpuntos,".");
-    var rTalleres = intTalleres.toString().replace(regexpuntos,".");
-    var rAseo = intAseo.toString().replace(regexpuntos,".");
-    var rDiapers = intDiapers.toString().replace(regexpuntos,".");
-    var rSalacuna = intSalacuna.toString().replace(regexpuntos,".");
-    var rNinera = intNinera.toString().replace(regexpuntos,".");
-    var rMadre = intMadre.toString().replace(regexpuntos,".");
+    var rArriendo = Math.round(((intArriendo / intPersonas) * intHijos)).toString().replace(regexpuntos,".");
+    var rLuz = Math.round(((intLuz / intPersonas) * intHijos)).toString().replace(regexpuntos,".");
+    var rAgua = Math.round(((intAgua / intPersonas) * intHijos)).toString().replace(regexpuntos,".");
+    var rInternet = Math.round(((intInternet / intPersonas) * intHijos)).toString().replace(regexpuntos,".");
+    var rCalefa = Math.round(((intCalefa / intPersonas) * intHijos)).toString().replace(regexpuntos,".");
+    var rSuperm = Math.round(intSuperm).toString().replace(regexpuntos,".");
+    var rFeria = Math.round(intFeria).toString().replace(regexpuntos,".");
+    var rAlmacen = Math.round(intAlmacen).toString().replace(regexpuntos,".");
+    var rArancel = Math.round(intArancel).toString().replace(regexpuntos,".");
+    var rTransporte = Math.round(intTransporte).toString().replace(regexpuntos,".");
+    var rUtiles = Math.round(intUtiles).toString().replace(regexpuntos,".");
+    var rConsultas = Math.round(intConsultas).toString().replace(regexpuntos,".");
+    var rMedicamentos = Math.round(intMedicamentos).toString().replace(regexpuntos,".");
+    var rRopa = Math.round(intRopa).toString().replace(regexpuntos,".");
+    var rCalzado = Math.round(intCalzado).toString().replace(regexpuntos,".");
+    var rEsparcimiento = Math.round(intEsparcimiento).toString().replace(regexpuntos,".");
+    var rTalleres = Math.round(intTalleres).toString().replace(regexpuntos,".");
+    var rAseo = Math.round(intAseo).toString().replace(regexpuntos,".");
+    var rDiapers = Math.round(intDiapers).toString().replace(regexpuntos,".");
+    var rSalacuna = Math.round(intSalacuna).toString().replace(regexpuntos,".");
+    var rNinera = Math.round(intNinera).toString().replace(regexpuntos,".");
+    var rMadre = Math.round(intMadre).toString().replace(regexpuntos,".");
 
 
 	//var fullNombres = (document.getElementById("nombre").value + " (" + intHijos + " hijos)").toString();
