@@ -136,12 +136,14 @@ function CalculoFinal() {
                 pensionapagar = 200000;
                 casopadre = 1;
             }
-        } else if (costoparapadre >= (tempingresospadre / 2)) {
-            pensionapagar = (tempingresospadre / 2);
-            casopadre = 3;
         } else {
             pensionapagar = costoparapadre;
             casopadre = 0;
+        }
+
+        if (pensionapagar >= (tempingresospadre / 2)) {
+            pensionapagar = (tempingresospadre / 2);
+            casopadre = 3;
         }
         
         let calculospadre = "";
