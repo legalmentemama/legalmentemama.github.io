@@ -101,6 +101,10 @@ function IsNumberValid(e) {
     return !(e < 0 || e % 1 != 0 || e > 999999999 || null == e || NaN == e || "" == e || e.toString().includes("e") || e.toString().includes("+") || e.toString().includes("-"));
 }
 
+function irSimulador(){
+    window.open(("index3.html?state=" + globalStateString), "_self");
+}
+
 function CalculoFinal() {
     if (
         (HideAccordion("sobretibutton"),
@@ -373,3 +377,5 @@ function SendWspMsg() {
     let e = "";
     (e = "https://api.whatsapp.com/send/?phone=56953560843&text=Hola, ¿me ayudan con mi caso?%0DRellené el formulario de Legalmente Mamá ♥%0D%0Dlegalmentemama.github.io/?state=" + globalStateString), window.open(e, "_blank");
 }
+
+
