@@ -102,7 +102,8 @@ function IsNumberValid(e) {
 }
 
 function irSimulador(){
-    window.open(("index3.html?state=" + globalStateString), "_self");
+    //window.open(("index3.html?state=" + globalStateString), "_self");
+    window.open(("/pension/index.html?state=" + globalStateString), "_self");
 }
 
 function CalculoFinal() {
@@ -375,7 +376,8 @@ if (urlParams.has("state")) {
 }
 function SendWspMsg() {
     let e = "";
-    (e = "https://api.whatsapp.com/send/?phone=56953560843&text=Hola, ¿me ayudan con mi caso?%0DRellené el formulario de Legalmente Mamá ♥%0D%0Dlegalmentemama.github.io/?state=" + globalStateString), window.open(e, "_blank");
+    (e = "https://api.whatsapp.com/send/?phone=56953560843&text=Hola, ¿me ayudan con mi caso?%0DRellené el formulario de Legalmente Mamá ♥%0D%0Dcalculadora.legalmentemama.cl/?state=" + globalStateString), window.open(e, "_blank");
+    //(e = "https://api.whatsapp.com/send/?phone=56953560843&text=Hola, ¿me ayudan con mi caso?%0DRellené el formulario de Legalmente Mamá ♥%0D%0Dlegalmentemama.github.io/?state=" + globalStateString), window.open(e, "_blank");
 }
 
 
