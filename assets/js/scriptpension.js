@@ -177,7 +177,7 @@ function CalculoFinal() {
                 parseInt(tempvalue), (formStateString += e + tempvalue + "!");
             }
             globalStateString = formStateString;
-            history.pushState(null, "", "index3.html?state=" + formStateString);
+            history.pushState(null, "", "index.html?state=" + formStateString);
             document.getElementById("resultadostexto").scrollIntoView({ behavior: "smooth", block: "start" });
             
         } else {
