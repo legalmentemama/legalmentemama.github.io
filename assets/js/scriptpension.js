@@ -217,5 +217,5 @@ if (urlParams.has("state")) {
 
 function SendWspMsg() {
     let e = "";
-    (e = "https://api.whatsapp.com/send?phone=56953560843&text=%C2%A1Hola!%20Me%20interesa%20agendar%20una%20asesor%C3%ADa%20jur%C3%ADdica%20sobre%20pensi%C3%B3n%20de%20alimentos%20%F0%9F%92%95.%0D%0DEste%20es%20mi%20formulario:%0Dcalculadora.legamentemama.cl/pension/?state=" + globalStateString + "0"), window.open(e, "_blank");
+    (e = "https://api.whatsapp.com/send?phone=56953560843&text=%C2%A1Hola!%20Me%20interesa%20agendar%20una%20asesor%C3%ADa%20jur%C3%ADdica%20sobre%20pensi%C3%B3n%20de%20alimentos%20%F0%9F%92%95.%0D%0DEste%20es%20mi%20formulario:%0Dcalculadora.legalmentemama.cl/pension/?state=" + globalStateString + "0"), window.open(e, "_blank");
 }
